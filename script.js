@@ -2,6 +2,7 @@ const axios = require('axios');
 const fs = require('fs');
 const path = require('path');
 const sharp = require('sharp');
+require('dotenv').config();
 
 // ----------------------
 // Конфигурация
@@ -44,7 +45,7 @@ async function uploadToGitHub(filePath, contentBuffer, commitMessage) {
 async function fetchAndProcessData() {
   try {
     // 1. Получаем данные
-    const response = await axios.get('ССЫЛКА_НА_ВАШЕ_API');
+    const response = await axios.get('https://api.hakush.in/zzz/data/character.json');
     const data = response.data;
 
     // 2. Исключаем двух персонажей
