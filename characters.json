@@ -1,0 +1,282 @@
+[
+  {
+    "id": "1011",
+    "code": "Anby",
+    "rank": 3,
+    "type": 2,
+    "element": 203,
+    "en": "Anby",
+    "portrait": "https://api.hakush.in/zzz/UI/IconRole01.webp",
+    "icon": "https://api.hakush.in/zzz/UI/IconRoleSelect01.webp"
+  },
+  {
+    "id": "1021",
+    "code": "Nekomata",
+    "rank": 4,
+    "type": 1,
+    "element": 200,
+    "en": "Nekomata",
+    "portrait": "https://api.hakush.in/zzz/UI/IconRole11.webp",
+    "icon": "https://api.hakush.in/zzz/UI/IconRoleSelect11.webp"
+  },
+  {
+    "id": "1031",
+    "code": "Nicole",
+    "rank": 3,
+    "type": 4,
+    "element": 205,
+    "en": "Nicole",
+    "portrait": "https://api.hakush.in/zzz/UI/IconRole12.webp",
+    "icon": "https://api.hakush.in/zzz/UI/IconRoleSelect12.webp"
+  },
+  {
+    "id": "1041",
+    "code": "Soldier 11",
+    "rank": 4,
+    "type": 1,
+    "element": 201,
+    "en": "Soldier 11",
+    "portrait": "https://api.hakush.in/zzz/UI/IconRole05.webp",
+    "icon": "https://api.hakush.in/zzz/UI/IconRoleSelect05.webp"
+  },
+  {
+    "id": "1061",
+    "code": "Corin",
+    "rank": 3,
+    "type": 1,
+    "element": 200,
+    "en": "Corin",
+    "portrait": "https://api.hakush.in/zzz/UI/IconRole09.webp",
+    "icon": "https://api.hakush.in/zzz/UI/IconRoleSelect09.webp"
+  },
+  {
+    "id": "1071",
+    "code": "Caesar",
+    "rank": 4,
+    "type": 5,
+    "element": 200,
+    "en": "Caesar",
+    "portrait": "https://api.hakush.in/zzz/UI/IconRole25.webp",
+    "icon": "https://api.hakush.in/zzz/UI/IconRoleSelect25.webp"
+  },
+  {
+    "id": "1081",
+    "code": "Billy",
+    "rank": 3,
+    "type": 1,
+    "element": 200,
+    "en": "Billy",
+    "portrait": "https://api.hakush.in/zzz/UI/IconRole10.webp",
+    "icon": "https://api.hakush.in/zzz/UI/IconRoleSelect10.webp"
+  },
+  {
+    "id": "1091",
+    "code": "Miyabi",
+    "rank": 4,
+    "type": 3,
+    "element": 202,
+    "en": "Miyabi",
+    "portrait": "https://api.hakush.in/zzz/UI/IconRole13.webp",
+    "icon": "https://api.hakush.in/zzz/UI/IconRoleSelect13.webp"
+  },
+  {
+    "id": "1101",
+    "code": "Koleda",
+    "rank": 4,
+    "type": 2,
+    "element": 201,
+    "en": "Koleda",
+    "portrait": "https://api.hakush.in/zzz/UI/IconRole14.webp",
+    "icon": "https://api.hakush.in/zzz/UI/IconRoleSelect14.webp"
+  },
+  {
+    "id": "1111",
+    "code": "Anton",
+    "rank": 3,
+    "type": 1,
+    "element": 203,
+    "en": "Anton",
+    "portrait": "https://api.hakush.in/zzz/UI/IconRole15.webp",
+    "icon": "https://api.hakush.in/zzz/UI/IconRoleSelect15.webp"
+  },
+  {
+    "id": "1121",
+    "code": "Ben",
+    "rank": 3,
+    "type": 5,
+    "element": 201,
+    "en": "Ben",
+    "portrait": "https://api.hakush.in/zzz/UI/IconRole16.webp",
+    "icon": "https://api.hakush.in/zzz/UI/IconRoleSelect16.webp"
+  },
+  {
+    "id": "1131",
+    "code": "Soukaku",
+    "rank": 3,
+    "type": 4,
+    "element": 202,
+    "en": "Soukaku",
+    "portrait": "https://api.hakush.in/zzz/UI/IconRole17.webp",
+    "icon": "https://api.hakush.in/zzz/UI/IconRoleSelect17.webp"
+  },
+  {
+    "id": "1141",
+    "code": "Lycaon",
+    "rank": 4,
+    "type": 2,
+    "element": 202,
+    "en": "Lycaon",
+    "portrait": "https://api.hakush.in/zzz/UI/IconRole18.webp",
+    "icon": "https://api.hakush.in/zzz/UI/IconRoleSelect18.webp"
+  },
+  {
+    "id": "1151",
+    "code": "Lucy",
+    "rank": 3,
+    "type": 4,
+    "element": 201,
+    "en": "Lucy",
+    "portrait": "https://api.hakush.in/zzz/UI/IconRole27.webp",
+    "icon": "https://api.hakush.in/zzz/UI/IconRoleSelect27.webp"
+  },
+  {
+    "id": "1161",
+    "code": "Lighter",
+    "rank": 4,
+    "type": 2,
+    "element": 201,
+    "en": "Lighter",
+    "portrait": "https://api.hakush.in/zzz/UI/IconRole26.webp",
+    "icon": "https://api.hakush.in/zzz/UI/IconRoleSelect26.webp"
+  },
+  {
+    "id": "1171",
+    "code": "Burnice",
+    "rank": 4,
+    "type": 3,
+    "element": 201,
+    "en": "Burnice",
+    "portrait": "https://api.hakush.in/zzz/UI/IconRole32.webp",
+    "icon": "https://api.hakush.in/zzz/UI/IconRoleSelect32.webp"
+  },
+  {
+    "id": "1181",
+    "code": "Grace",
+    "rank": 4,
+    "type": 3,
+    "element": 203,
+    "en": "Grace",
+    "portrait": "https://api.hakush.in/zzz/UI/IconRole20.webp",
+    "icon": "https://api.hakush.in/zzz/UI/IconRoleSelect20.webp"
+  },
+  {
+    "id": "1191",
+    "code": "Ellen",
+    "rank": 4,
+    "type": 1,
+    "element": 202,
+    "en": "Ellen",
+    "portrait": "https://api.hakush.in/zzz/UI/IconRole21.webp",
+    "icon": "https://api.hakush.in/zzz/UI/IconRoleSelect21.webp"
+  },
+  {
+    "id": "1201",
+    "code": "Harumasa",
+    "rank": 4,
+    "type": 1,
+    "element": 203,
+    "en": "Harumasa",
+    "portrait": "https://api.hakush.in/zzz/UI/IconRole35.webp",
+    "icon": "https://api.hakush.in/zzz/UI/IconRoleSelect35.webp"
+  },
+  {
+    "id": "1211",
+    "code": "Rina",
+    "rank": 4,
+    "type": 4,
+    "element": 203,
+    "en": "Rina",
+    "portrait": "https://api.hakush.in/zzz/UI/IconRole22.webp",
+    "icon": "https://api.hakush.in/zzz/UI/IconRoleSelect22.webp"
+  },
+  {
+    "id": "1221",
+    "code": "Yanagi",
+    "rank": 4,
+    "type": 3,
+    "element": 203,
+    "en": "Yanagi",
+    "portrait": "https://api.hakush.in/zzz/UI/IconRole31.webp",
+    "icon": "https://api.hakush.in/zzz/UI/IconRoleSelect31.webp"
+  },
+  {
+    "id": "1241",
+    "code": "Zhu Yuan",
+    "rank": 4,
+    "type": 1,
+    "element": 205,
+    "en": "Zhu Yuan",
+    "portrait": "https://api.hakush.in/zzz/UI/IconRole23.webp",
+    "icon": "https://api.hakush.in/zzz/UI/IconRoleSelect23.webp"
+  },
+  {
+    "id": "1251",
+    "code": "QingYi",
+    "rank": 4,
+    "type": 2,
+    "element": 203,
+    "en": "Qingyi",
+    "portrait": "https://api.hakush.in/zzz/UI/IconRole29.webp",
+    "icon": "https://api.hakush.in/zzz/UI/IconRoleSelect29.webp"
+  },
+  {
+    "id": "1261",
+    "code": "Jane",
+    "rank": 4,
+    "type": 3,
+    "element": 200,
+    "en": "Jane",
+    "portrait": "https://api.hakush.in/zzz/UI/IconRole24.webp",
+    "icon": "https://api.hakush.in/zzz/UI/IconRoleSelect24.webp"
+  },
+  {
+    "id": "1271",
+    "code": "Seth",
+    "rank": 3,
+    "type": 5,
+    "element": 203,
+    "en": "Seth",
+    "portrait": "https://api.hakush.in/zzz/UI/IconRole30.webp",
+    "icon": "https://api.hakush.in/zzz/UI/IconRoleSelect30.webp"
+  },
+  {
+    "id": "1281",
+    "code": "Piper",
+    "rank": 3,
+    "type": 3,
+    "element": 200,
+    "en": "Piper",
+    "portrait": "https://api.hakush.in/zzz/UI/IconRole28.webp",
+    "icon": "https://api.hakush.in/zzz/UI/IconRoleSelect28.webp"
+  },
+  {
+    "id": "1311",
+    "code": "Astra",
+    "rank": 4,
+    "type": 4,
+    "element": 205,
+    "en": "Astra Yao",
+    "portrait": "https://api.hakush.in/zzz/UI/IconRole36.webp",
+    "icon": "https://api.hakush.in/zzz/UI/IconRoleSelect36.webp"
+  },
+  {
+    "id": "1321",
+    "code": "Evelyn",
+    "rank": 4,
+    "type": 1,
+    "element": 201,
+    "en": "Evelyn",
+    "portrait": "https://api.hakush.in/zzz/UI/IconRole37.webp",
+    "icon": "https://api.hakush.in/zzz/UI/IconRoleSelect37.webp"
+  }
+]
