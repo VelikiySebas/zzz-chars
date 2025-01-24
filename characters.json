@@ -6,8 +6,8 @@
     "type": 2,
     "element": 203,
     "en": "Anby",
-    "portrait": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRole01.png?ref=master",
-    "icon": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRoleSelect01.png?ref=master"
+    "portrait": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/portraits/IconRole01.png",
+    "icon": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/icons/IconRoleSelect01.png"
   },
   {
     "id": "1021",
@@ -16,8 +16,8 @@
     "type": 1,
     "element": 200,
     "en": "Nekomata",
-    "portrait": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRole11.png?ref=master",
-    "icon": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRoleSelect11.png?ref=master"
+    "portrait": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/portraits/IconRole11.png",
+    "icon": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/icons/IconRoleSelect11.png"
   },
   {
     "id": "1031",
@@ -26,8 +26,8 @@
     "type": 4,
     "element": 205,
     "en": "Nicole",
-    "portrait": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRole12.png?ref=master",
-    "icon": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRoleSelect12.png?ref=master"
+    "portrait": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/portraits/IconRole12.png",
+    "icon": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/icons/IconRoleSelect12.png"
   },
   {
     "id": "1041",
@@ -36,8 +36,8 @@
     "type": 1,
     "element": 201,
     "en": "Soldier 11",
-    "portrait": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRole05.png?ref=master",
-    "icon": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRoleSelect05.png?ref=master"
+    "portrait": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/portraits/IconRole05.png",
+    "icon": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/icons/IconRoleSelect05.png"
   },
   {
     "id": "1061",
@@ -46,8 +46,8 @@
     "type": 1,
     "element": 200,
     "en": "Corin",
-    "portrait": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRole09.png?ref=master",
-    "icon": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRoleSelect09.png?ref=master"
+    "portrait": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/portraits/IconRole09.png",
+    "icon": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/icons/IconRoleSelect09.png"
   },
   {
     "id": "1071",
@@ -56,8 +56,8 @@
     "type": 5,
     "element": 200,
     "en": "Caesar",
-    "portrait": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRole25.png?ref=master",
-    "icon": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRoleSelect25.png?ref=master"
+    "portrait": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/portraits/IconRole25.png",
+    "icon": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/icons/IconRoleSelect25.png"
   },
   {
     "id": "1081",
@@ -66,8 +66,8 @@
     "type": 1,
     "element": 200,
     "en": "Billy",
-    "portrait": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRole10.png?ref=master",
-    "icon": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRoleSelect10.png?ref=master"
+    "portrait": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/portraits/IconRole10.png",
+    "icon": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/icons/IconRoleSelect10.png"
   },
   {
     "id": "1091",
@@ -76,8 +76,8 @@
     "type": 3,
     "element": 202,
     "en": "Miyabi",
-    "portrait": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRole13.png?ref=master",
-    "icon": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRoleSelect13.png?ref=master"
+    "portrait": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/portraits/IconRole13.png",
+    "icon": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/icons/IconRoleSelect13.png"
   },
   {
     "id": "1101",
@@ -86,8 +86,8 @@
     "type": 2,
     "element": 201,
     "en": "Koleda",
-    "portrait": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRole14.png?ref=master",
-    "icon": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRoleSelect14.png?ref=master"
+    "portrait": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/portraits/IconRole14.png",
+    "icon": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/icons/IconRoleSelect14.png"
   },
   {
     "id": "1111",
@@ -96,8 +96,8 @@
     "type": 1,
     "element": 203,
     "en": "Anton",
-    "portrait": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRole15.png?ref=master",
-    "icon": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRoleSelect15.png?ref=master"
+    "portrait": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/portraits/IconRole15.png",
+    "icon": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/icons/IconRoleSelect15.png"
   },
   {
     "id": "1121",
@@ -106,8 +106,8 @@
     "type": 5,
     "element": 201,
     "en": "Ben",
-    "portrait": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRole16.png?ref=master",
-    "icon": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRoleSelect16.png?ref=master"
+    "portrait": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/portraits/IconRole16.png",
+    "icon": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/icons/IconRoleSelect16.png"
   },
   {
     "id": "1131",
@@ -116,8 +116,8 @@
     "type": 4,
     "element": 202,
     "en": "Soukaku",
-    "portrait": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRole17.png?ref=master",
-    "icon": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRoleSelect17.png?ref=master"
+    "portrait": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/portraits/IconRole17.png",
+    "icon": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/icons/IconRoleSelect17.png"
   },
   {
     "id": "1141",
@@ -126,8 +126,8 @@
     "type": 2,
     "element": 202,
     "en": "Lycaon",
-    "portrait": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRole18.png?ref=master",
-    "icon": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRoleSelect18.png?ref=master"
+    "portrait": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/portraits/IconRole18.png",
+    "icon": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/icons/IconRoleSelect18.png"
   },
   {
     "id": "1151",
@@ -136,8 +136,8 @@
     "type": 4,
     "element": 201,
     "en": "Lucy",
-    "portrait": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRole27.png?ref=master",
-    "icon": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRoleSelect27.png?ref=master"
+    "portrait": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/portraits/IconRole27.png",
+    "icon": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/icons/IconRoleSelect27.png"
   },
   {
     "id": "1161",
@@ -146,8 +146,8 @@
     "type": 2,
     "element": 201,
     "en": "Lighter",
-    "portrait": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRole26.png?ref=master",
-    "icon": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRoleSelect26.png?ref=master"
+    "portrait": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/portraits/IconRole26.png",
+    "icon": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/icons/IconRoleSelect26.png"
   },
   {
     "id": "1171",
@@ -156,8 +156,8 @@
     "type": 3,
     "element": 201,
     "en": "Burnice",
-    "portrait": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRole32.png?ref=master",
-    "icon": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRoleSelect32.png?ref=master"
+    "portrait": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/portraits/IconRole32.png",
+    "icon": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/icons/IconRoleSelect32.png"
   },
   {
     "id": "1181",
@@ -166,8 +166,8 @@
     "type": 3,
     "element": 203,
     "en": "Grace",
-    "portrait": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRole20.png?ref=master",
-    "icon": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRoleSelect20.png?ref=master"
+    "portrait": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/portraits/IconRole20.png",
+    "icon": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/icons/IconRoleSelect20.png"
   },
   {
     "id": "1191",
@@ -176,8 +176,8 @@
     "type": 1,
     "element": 202,
     "en": "Ellen",
-    "portrait": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRole21.png?ref=master",
-    "icon": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRoleSelect21.png?ref=master"
+    "portrait": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/portraits/IconRole21.png",
+    "icon": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/icons/IconRoleSelect21.png"
   },
   {
     "id": "1201",
@@ -186,8 +186,8 @@
     "type": 1,
     "element": 203,
     "en": "Harumasa",
-    "portrait": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRole35.png?ref=master",
-    "icon": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRoleSelect35.png?ref=master"
+    "portrait": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/portraits/IconRole35.png",
+    "icon": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/icons/IconRoleSelect35.png"
   },
   {
     "id": "1211",
@@ -196,8 +196,8 @@
     "type": 4,
     "element": 203,
     "en": "Rina",
-    "portrait": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRole22.png?ref=master",
-    "icon": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRoleSelect22.png?ref=master"
+    "portrait": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/portraits/IconRole22.png",
+    "icon": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/icons/IconRoleSelect22.png"
   },
   {
     "id": "1221",
@@ -206,8 +206,8 @@
     "type": 3,
     "element": 203,
     "en": "Yanagi",
-    "portrait": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRole31.png?ref=master",
-    "icon": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRoleSelect31.png?ref=master"
+    "portrait": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/portraits/IconRole31.png",
+    "icon": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/icons/IconRoleSelect31.png"
   },
   {
     "id": "1241",
@@ -216,8 +216,8 @@
     "type": 1,
     "element": 205,
     "en": "Zhu Yuan",
-    "portrait": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRole23.png?ref=master",
-    "icon": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRoleSelect23.png?ref=master"
+    "portrait": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/portraits/IconRole23.png",
+    "icon": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/icons/IconRoleSelect23.png"
   },
   {
     "id": "1251",
@@ -226,8 +226,8 @@
     "type": 2,
     "element": 203,
     "en": "Qingyi",
-    "portrait": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRole29.png?ref=master",
-    "icon": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRoleSelect29.png?ref=master"
+    "portrait": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/portraits/IconRole29.png",
+    "icon": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/icons/IconRoleSelect29.png"
   },
   {
     "id": "1261",
@@ -236,8 +236,8 @@
     "type": 3,
     "element": 200,
     "en": "Jane",
-    "portrait": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRole24.png?ref=master",
-    "icon": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRoleSelect24.png?ref=master"
+    "portrait": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/portraits/IconRole24.png",
+    "icon": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/icons/IconRoleSelect24.png"
   },
   {
     "id": "1271",
@@ -246,8 +246,8 @@
     "type": 5,
     "element": 203,
     "en": "Seth",
-    "portrait": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRole30.png?ref=master",
-    "icon": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRoleSelect30.png?ref=master"
+    "portrait": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/portraits/IconRole30.png",
+    "icon": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/icons/IconRoleSelect30.png"
   },
   {
     "id": "1281",
@@ -256,8 +256,8 @@
     "type": 3,
     "element": 200,
     "en": "Piper",
-    "portrait": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRole28.png?ref=master",
-    "icon": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRoleSelect28.png?ref=master"
+    "portrait": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/portraits/IconRole28.png",
+    "icon": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/icons/IconRoleSelect28.png"
   },
   {
     "id": "1311",
@@ -266,8 +266,8 @@
     "type": 4,
     "element": 205,
     "en": "Astra Yao",
-    "portrait": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRole36.png?ref=master",
-    "icon": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRoleSelect36.png?ref=master"
+    "portrait": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/portraits/IconRole36.png",
+    "icon": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/icons/IconRoleSelect36.png"
   },
   {
     "id": "1321",
@@ -276,7 +276,7 @@
     "type": 1,
     "element": 201,
     "en": "Evelyn",
-    "portrait": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRole37.png?ref=master",
-    "icon": "https://api.github.com/repos/ABYSSCUP/zzz-chars/contents/images/IconRoleSelect37.png?ref=master"
+    "portrait": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/portraits/IconRole37.png",
+    "icon": "https://raw.githubusercontent.com/ABYSSCUP/zzz-chars/master/images/characters/icons/IconRoleSelect37.png"
   }
 ]
