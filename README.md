@@ -1,6 +1,6 @@
 короче
 
-npm i axios sharp dotenv
+npm i
 
 в .env
 
