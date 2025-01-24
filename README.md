@@ -15,3 +15,5 @@ BRANCH=master
 ```
  node script.js
 ```
+
+вся инфа в characters.json bangboo.json weapons.json
