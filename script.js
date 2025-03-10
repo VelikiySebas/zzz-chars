@@ -105,8 +105,9 @@ async function processCharacters() {
       const portraitFilePath = `images/characters/portraits/${character.icon}.png`;
       const iconFilePath = `images/characters/icons/${character.icon.replace('IconRole', 'IconRoleSelect')}.png`;
       const halfPortraitFilePath = `images/characters/half-portraits/${id}.png`;
+      const halfPortrait170FilePath = `images/characters/half-portraits-170/${id}.png`;
 
-      // Загружаем в GitHub
+      // Загружаем в GitHub оригинальные изображения
       try {
         await uploadToGitHub(portraitFilePath, portraitPngBuffer, `Upload portrait for ${character.code}`);
         await uploadToGitHub(iconFilePath, iconPngBuffer, `Upload icon for ${character.code}`);
@@ -116,10 +117,24 @@ async function processCharacters() {
         continue;
       }
 
+      // Создаём уменьшенную версию half portrait (326x170)
+      try {
+        const halfPortraitResizedBuffer = await sharp(halfPortraitHoyoUrlBuffer)
+          .resize(326, 170)
+          .png()
+          .toBuffer();
+        await uploadToGitHub(halfPortrait170FilePath, halfPortraitResizedBuffer, `Upload resized half portrait for ${character.code}`);
+      } catch (error) {
+        console.error(`Ошибка при создании/загрузке уменьшенного half portrait для персонажа ${character.code}:`, error);
+        // Если не удалось создать уменьшенную версию, можно продолжить без неё
+      }
+
       // Формируем ссылки для JSON
       const portraitGitHubUrl = `https://raw.githubusercontent.com/${GITHUB_USER}/${REPO_NAME}/${BRANCH}/${portraitFilePath}`;
       const iconGitHubUrl = `https://raw.githubusercontent.com/${GITHUB_USER}/${REPO_NAME}/${BRANCH}/${iconFilePath}`;
       const halfPortraitGitHubUrl = `https://raw.githubusercontent.com/${GITHUB_USER}/${REPO_NAME}/${BRANCH}/${halfPortraitFilePath}`;
+      // Можно добавить ссылку на уменьшённую версию, если потребуется:
+      const halfPortrait170GitHubUrl = `https://raw.githubusercontent.com/${GITHUB_USER}/${REPO_NAME}/${BRANCH}/${halfPortrait170FilePath}`;
 
       results.push({
         id,
@@ -131,6 +146,7 @@ async function processCharacters() {
         portrait: portraitGitHubUrl,
         icon: iconGitHubUrl,
         halfPortrait: halfPortraitGitHubUrl,
+        halfPortrait170: halfPortrait170GitHubUrl // добавляем ссылку на уменьшенную версию
       });
     }
 
@@ -140,6 +156,7 @@ async function processCharacters() {
     console.error('Ошибка при обработке персонажей:', error);
   }
 }
+
 
 
 // Функция обработки оружия
