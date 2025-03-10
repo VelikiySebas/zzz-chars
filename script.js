@@ -41,7 +41,6 @@ async function uploadToGitHub(filePath, contentBuffer, commitMessage) {
   }
 }
 
-// Функция обработки персонажей
 async function processCharacters() {
   try {
     const response = await axios.get('https://api.hakush.in/zzz/data/character.json');
@@ -53,20 +52,54 @@ async function processCharacters() {
     for (let [id, character] of Object.entries(data)) {
       if (excludedIds.includes(id)) continue;
 
-      // Формируем URL для загрузки
+      // Формируем URL для загрузки изображений
       const portraitWebpUrl = `https://api.hakush.in/zzz/UI/${character.icon}.webp`;
       const iconWebpUrl = `https://api.hakush.in/zzz/UI/${character.icon.replace('IconRole', 'IconRoleSelect')}.webp`;
-      const halfPortraitHoyoUrl = `https://act-webstatic.hoyoverse.com/game_record/zzzv2/role_vertical_painting/role_vertical_painting_${id}.png`
+      const halfPortraitHoyoUrl = `https://act-webstatic.hoyoverse.com/game_record/zzzv2/role_vertical_painting/role_vertical_painting_${id}.png`;
 
-      const halfPortraitHoyoUrlBuffer = (await axios.get(halfPortraitHoyoUrl, { responseType: 'arraybuffer' })).data;
+      let halfPortraitHoyoUrlBuffer = '';
+      let portraitWebpBuffer = '';
+      let iconWebpBuffer = '';
 
-      // Скачиваем webp
-      const portraitWebpBuffer = (await axios.get(portraitWebpUrl, { responseType: 'arraybuffer' })).data;
-      const iconWebpBuffer = (await axios.get(iconWebpUrl, { responseType: 'arraybuffer' })).data;
+      // Получение half portrait
+      try {
+        const halfPortraitHoyoResponse = await axios.get(halfPortraitHoyoUrl, { responseType: 'arraybuffer' });
+        halfPortraitHoyoUrlBuffer = halfPortraitHoyoResponse.data;
+      } catch (error) {
+        console.error(`Ошибка при загрузке halfPortraitHoyoUrl для персонажа ${character.code}:`, error);
+      }
 
-      // Конвертируем webp → png
-      const portraitPngBuffer = await sharp(portraitWebpBuffer).png().toBuffer();
-      const iconPngBuffer = await sharp(iconWebpBuffer).png().toBuffer();
+      // Получение portrait webp
+      try {
+        const portraitWebpResponse = await axios.get(portraitWebpUrl, { responseType: 'arraybuffer' });
+        portraitWebpBuffer = portraitWebpResponse.data;
+      } catch (error) {
+        console.error(`Ошибка при загрузке portraitWebpUrl для персонажа ${character.code}:`, error);
+      }
+
+      // Получение icon webp
+      try {
+        const iconWebpResponse = await axios.get(iconWebpUrl, { responseType: 'arraybuffer' });
+        iconWebpBuffer = iconWebpResponse.data;
+      } catch (error) {
+        console.error(`Ошибка при загрузке iconWebpUrl для персонажа ${character.code}:`, error);
+      }
+
+      // Если хоть одно из изображений не получено, пропускаем персонажа
+      if (!halfPortraitHoyoUrlBuffer || !portraitWebpBuffer || !iconWebpBuffer) {
+        console.warn(`Пропускаем персонажа ${character.code} из-за ошибки загрузки изображений.`);
+        continue;
+      }
+
+      let portraitPngBuffer, iconPngBuffer;
+      // Конвертируем webp в png
+      try {
+        portraitPngBuffer = await sharp(portraitWebpBuffer).png().toBuffer();
+        iconPngBuffer = await sharp(iconWebpBuffer).png().toBuffer();
+      } catch (error) {
+        console.error(`Ошибка при конвертации изображений для персонажа ${character.code}:`, error);
+        continue;
+      }
 
       // Пути для загрузки
       const portraitFilePath = `images/characters/portraits/${character.icon}.png`;
@@ -74,14 +107,19 @@ async function processCharacters() {
       const halfPortraitFilePath = `images/characters/half-portraits/${id}.png`;
 
       // Загружаем в GitHub
-      await uploadToGitHub(portraitFilePath, portraitPngBuffer, `Upload portrait for ${character.code}`);
-      await uploadToGitHub(iconFilePath, iconPngBuffer, `Upload icon for ${character.code}`);
-      await uploadToGitHub(halfPortraitFilePath, halfPortraitHoyoUrlBuffer, `Upload half portrait for ${character.code}`)
+      try {
+        await uploadToGitHub(portraitFilePath, portraitPngBuffer, `Upload portrait for ${character.code}`);
+        await uploadToGitHub(iconFilePath, iconPngBuffer, `Upload icon for ${character.code}`);
+        await uploadToGitHub(halfPortraitFilePath, halfPortraitHoyoUrlBuffer, `Upload half portrait for ${character.code}`);
+      } catch (error) {
+        console.error(`Ошибка при загрузке файлов на GitHub для персонажа ${character.code}:`, error);
+        continue;
+      }
 
       // Формируем ссылки для JSON
       const portraitGitHubUrl = `https://raw.githubusercontent.com/${GITHUB_USER}/${REPO_NAME}/${BRANCH}/${portraitFilePath}`;
       const iconGitHubUrl = `https://raw.githubusercontent.com/${GITHUB_USER}/${REPO_NAME}/${BRANCH}/${iconFilePath}`;
-      const halfPortraitGitHubUrl = `https://raw.githubusercontent.com/${GITHUB_USER}/${REPO_NAME}/${BRANCH}/${halfPortraitFilePath}`
+      const halfPortraitGitHubUrl = `https://raw.githubusercontent.com/${GITHUB_USER}/${REPO_NAME}/${BRANCH}/${halfPortraitFilePath}`;
 
       results.push({
         id,
@@ -102,6 +140,7 @@ async function processCharacters() {
     console.error('Ошибка при обработке персонажей:', error);
   }
 }
+
 
 // Функция обработки оружия
 async function processWeapons() {
