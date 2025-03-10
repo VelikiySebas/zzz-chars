@@ -56,6 +56,7 @@ async function processCharacters() {
       const portraitWebpUrl = `https://api.hakush.in/zzz/UI/${character.icon}.webp`;
       const iconWebpUrl = `https://api.hakush.in/zzz/UI/${character.icon.replace('IconRole', 'IconRoleSelect')}.webp`;
       const halfPortraitHoyoUrl = `https://act-webstatic.hoyoverse.com/game_record/zzzv2/role_vertical_painting/role_vertical_painting_${id}.png`;
+      const iconHoyoUrl = `https://act-webstatic.hoyoverse.com/game_record/zzzv2/role_square_avatar/role_square_avatar_${id}.png`;
 
       let halfPortraitHoyoUrlBuffer = '';
       let portraitWebpBuffer = '';
@@ -68,6 +69,14 @@ async function processCharacters() {
       } catch (error) {
         console.error(`Ошибка при загрузке halfPortraitHoyoUrl для персонажа ${character.code}:`, error);
       }
+
+            // Получение half portrait
+            try {
+              const iconHoyoUrlHoyoResponse = await axios.get(iconHoyoUrl, { responseType: 'arraybuffer' });
+              iconHoyoUrlBuffer = iconHoyoUrlHoyoResponse.data;
+            } catch (error) {
+              console.error(`Ошибка при загрузке iconHoyoUrl для персонажа ${character.code}:`, error);
+            }
 
       // Получение portrait webp
       try {
@@ -102,16 +111,18 @@ async function processCharacters() {
       }
 
       // Пути для загрузки
-      const portraitFilePath = `images/characters/portraits/${character.icon}.png`;
-      const iconFilePath = `images/characters/icons/${character.icon.replace('IconRole', 'IconRoleSelect')}.png`;
+      const portraitFilePath = `images/characters/portraits/${id}.png`;
+      const iconFilePath = `images/characters/icons/${id}.png`;
       const halfPortraitFilePath = `images/characters/half-portraits/${id}.png`;
       const halfPortrait170FilePath = `images/characters/half-portraits-170/${id}.png`;
+      const iconHoyoUrlFilePath = `images/characters/hoyo-avatar/${id}.png`;
 
       // Загружаем в GitHub оригинальные изображения
       try {
         await uploadToGitHub(portraitFilePath, portraitPngBuffer, `Upload portrait for ${character.code}`);
         await uploadToGitHub(iconFilePath, iconPngBuffer, `Upload icon for ${character.code}`);
         await uploadToGitHub(halfPortraitFilePath, halfPortraitHoyoUrlBuffer, `Upload half portrait for ${character.code}`);
+        await uploadToGitHub(iconHoyoUrlFilePath, iconHoyoUrlBuffer, `Upload hoyo icon portrait for ${character.code}`);
       } catch (error) {
         console.error(`Ошибка при загрузке файлов на GitHub для персонажа ${character.code}:`, error);
         continue;
@@ -135,6 +146,7 @@ async function processCharacters() {
       const halfPortraitGitHubUrl = `https://raw.githubusercontent.com/${GITHUB_USER}/${REPO_NAME}/${BRANCH}/${halfPortraitFilePath}`;
       // Можно добавить ссылку на уменьшённую версию, если потребуется:
       const halfPortrait170GitHubUrl = `https://raw.githubusercontent.com/${GITHUB_USER}/${REPO_NAME}/${BRANCH}/${halfPortrait170FilePath}`;
+      const iconHoyoGitHubUrl = `https://raw.githubusercontent.com/${GITHUB_USER}/${REPO_NAME}/${BRANCH}/${iconHoyoUrlFilePath}`;
 
       results.push({
         id,
@@ -143,9 +155,11 @@ async function processCharacters() {
         type: character.type,
         element: character.element,
         en: character.EN,
+        camp: character.camp,
         portrait: portraitGitHubUrl,
         icon: iconGitHubUrl,
         halfPortrait: halfPortraitGitHubUrl,
+        iconHoyo: iconHoyoGitHubUrl,
         halfPortrait170: halfPortrait170GitHubUrl // добавляем ссылку на уменьшенную версию
       });
     }

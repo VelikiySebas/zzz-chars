@@ -6,9 +6,11 @@
     "type": 2,
     "element": 203,
     "en": "Anby",
-    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/IconRole01.png",
-    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/IconRoleSelect01.png",
+    "camp": 1,
+    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/1011.png",
+    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/1011.png",
     "halfPortrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits/1011.png",
+    "iconHoyo": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/hoyo-avatar/1011.png",
     "halfPortrait170": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits-170/1011.png"
   },
   {
@@ -18,9 +20,11 @@
     "type": 1,
     "element": 200,
     "en": "Nekomata",
-    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/IconRole11.png",
-    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/IconRoleSelect11.png",
+    "camp": 1,
+    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/1021.png",
+    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/1021.png",
     "halfPortrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits/1021.png",
+    "iconHoyo": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/hoyo-avatar/1021.png",
     "halfPortrait170": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits-170/1021.png"
   },
   {
@@ -30,9 +34,11 @@
     "type": 4,
     "element": 205,
     "en": "Nicole",
-    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/IconRole12.png",
-    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/IconRoleSelect12.png",
+    "camp": 1,
+    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/1031.png",
+    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/1031.png",
     "halfPortrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits/1031.png",
+    "iconHoyo": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/hoyo-avatar/1031.png",
     "halfPortrait170": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits-170/1031.png"
   },
   {
@@ -42,9 +48,11 @@
     "type": 1,
     "element": 201,
     "en": "Soldier 11",
-    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/IconRole05.png",
-    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/IconRoleSelect05.png",
+    "camp": 5,
+    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/1041.png",
+    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/1041.png",
     "halfPortrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits/1041.png",
+    "iconHoyo": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/hoyo-avatar/1041.png",
     "halfPortrait170": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits-170/1041.png"
   },
   {
@@ -54,9 +62,11 @@
     "type": 1,
     "element": 200,
     "en": "Corin",
-    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/IconRole09.png",
-    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/IconRoleSelect09.png",
+    "camp": 2,
+    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/1061.png",
+    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/1061.png",
     "halfPortrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits/1061.png",
+    "iconHoyo": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/hoyo-avatar/1061.png",
     "halfPortrait170": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits-170/1061.png"
   },
   {
@@ -66,9 +76,11 @@
     "type": 5,
     "element": 200,
     "en": "Caesar",
-    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/IconRole25.png",
-    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/IconRoleSelect25.png",
+    "camp": 4,
+    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/1071.png",
+    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/1071.png",
     "halfPortrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits/1071.png",
+    "iconHoyo": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/hoyo-avatar/1071.png",
     "halfPortrait170": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits-170/1071.png"
   },
   {
@@ -78,9 +90,11 @@
     "type": 1,
     "element": 200,
     "en": "Billy",
-    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/IconRole10.png",
-    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/IconRoleSelect10.png",
+    "camp": 1,
+    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/1081.png",
+    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/1081.png",
     "halfPortrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits/1081.png",
+    "iconHoyo": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/hoyo-avatar/1081.png",
     "halfPortrait170": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits-170/1081.png"
   },
   {
@@ -90,9 +104,11 @@
     "type": 3,
     "element": 202,
     "en": "Miyabi",
-    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/IconRole13.png",
-    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/IconRoleSelect13.png",
+    "camp": 6,
+    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/1091.png",
+    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/1091.png",
     "halfPortrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits/1091.png",
+    "iconHoyo": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/hoyo-avatar/1091.png",
     "halfPortrait170": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits-170/1091.png"
   },
   {
@@ -102,9 +118,11 @@
     "type": 2,
     "element": 201,
     "en": "Koleda",
-    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/IconRole14.png",
-    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/IconRoleSelect14.png",
+    "camp": 3,
+    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/1101.png",
+    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/1101.png",
     "halfPortrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits/1101.png",
+    "iconHoyo": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/hoyo-avatar/1101.png",
     "halfPortrait170": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits-170/1101.png"
   },
   {
@@ -114,9 +132,11 @@
     "type": 1,
     "element": 203,
     "en": "Anton",
-    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/IconRole15.png",
-    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/IconRoleSelect15.png",
+    "camp": 3,
+    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/1111.png",
+    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/1111.png",
     "halfPortrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits/1111.png",
+    "iconHoyo": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/hoyo-avatar/1111.png",
     "halfPortrait170": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits-170/1111.png"
   },
   {
@@ -126,9 +146,11 @@
     "type": 5,
     "element": 201,
     "en": "Ben",
-    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/IconRole16.png",
-    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/IconRoleSelect16.png",
+    "camp": 3,
+    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/1121.png",
+    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/1121.png",
     "halfPortrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits/1121.png",
+    "iconHoyo": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/hoyo-avatar/1121.png",
     "halfPortrait170": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits-170/1121.png"
   },
   {
@@ -138,9 +160,11 @@
     "type": 4,
     "element": 202,
     "en": "Soukaku",
-    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/IconRole17.png",
-    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/IconRoleSelect17.png",
+    "camp": 6,
+    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/1131.png",
+    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/1131.png",
     "halfPortrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits/1131.png",
+    "iconHoyo": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/hoyo-avatar/1131.png",
     "halfPortrait170": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits-170/1131.png"
   },
   {
@@ -150,9 +174,11 @@
     "type": 2,
     "element": 202,
     "en": "Lycaon",
-    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/IconRole18.png",
-    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/IconRoleSelect18.png",
+    "camp": 2,
+    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/1141.png",
+    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/1141.png",
     "halfPortrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits/1141.png",
+    "iconHoyo": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/hoyo-avatar/1141.png",
     "halfPortrait170": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits-170/1141.png"
   },
   {
@@ -162,9 +188,11 @@
     "type": 4,
     "element": 201,
     "en": "Lucy",
-    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/IconRole27.png",
-    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/IconRoleSelect27.png",
+    "camp": 4,
+    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/1151.png",
+    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/1151.png",
     "halfPortrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits/1151.png",
+    "iconHoyo": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/hoyo-avatar/1151.png",
     "halfPortrait170": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits-170/1151.png"
   },
   {
@@ -174,9 +202,11 @@
     "type": 2,
     "element": 201,
     "en": "Lighter",
-    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/IconRole26.png",
-    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/IconRoleSelect26.png",
+    "camp": 4,
+    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/1161.png",
+    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/1161.png",
     "halfPortrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits/1161.png",
+    "iconHoyo": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/hoyo-avatar/1161.png",
     "halfPortrait170": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits-170/1161.png"
   },
   {
@@ -186,9 +216,11 @@
     "type": 3,
     "element": 201,
     "en": "Burnice",
-    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/IconRole32.png",
-    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/IconRoleSelect32.png",
+    "camp": 4,
+    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/1171.png",
+    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/1171.png",
     "halfPortrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits/1171.png",
+    "iconHoyo": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/hoyo-avatar/1171.png",
     "halfPortrait170": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits-170/1171.png"
   },
   {
@@ -198,9 +230,11 @@
     "type": 3,
     "element": 203,
     "en": "Grace",
-    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/IconRole20.png",
-    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/IconRoleSelect20.png",
+    "camp": 3,
+    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/1181.png",
+    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/1181.png",
     "halfPortrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits/1181.png",
+    "iconHoyo": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/hoyo-avatar/1181.png",
     "halfPortrait170": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits-170/1181.png"
   },
   {
@@ -210,9 +244,11 @@
     "type": 1,
     "element": 202,
     "en": "Ellen",
-    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/IconRole21.png",
-    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/IconRoleSelect21.png",
+    "camp": 2,
+    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/1191.png",
+    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/1191.png",
     "halfPortrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits/1191.png",
+    "iconHoyo": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/hoyo-avatar/1191.png",
     "halfPortrait170": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits-170/1191.png"
   },
   {
@@ -222,9 +258,11 @@
     "type": 1,
     "element": 203,
     "en": "Harumasa",
-    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/IconRole35.png",
-    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/IconRoleSelect35.png",
+    "camp": 6,
+    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/1201.png",
+    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/1201.png",
     "halfPortrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits/1201.png",
+    "iconHoyo": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/hoyo-avatar/1201.png",
     "halfPortrait170": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits-170/1201.png"
   },
   {
@@ -234,9 +272,11 @@
     "type": 4,
     "element": 203,
     "en": "Rina",
-    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/IconRole22.png",
-    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/IconRoleSelect22.png",
+    "camp": 2,
+    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/1211.png",
+    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/1211.png",
     "halfPortrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits/1211.png",
+    "iconHoyo": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/hoyo-avatar/1211.png",
     "halfPortrait170": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits-170/1211.png"
   },
   {
@@ -246,9 +286,11 @@
     "type": 3,
     "element": 203,
     "en": "Yanagi",
-    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/IconRole31.png",
-    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/IconRoleSelect31.png",
+    "camp": 6,
+    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/1221.png",
+    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/1221.png",
     "halfPortrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits/1221.png",
+    "iconHoyo": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/hoyo-avatar/1221.png",
     "halfPortrait170": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits-170/1221.png"
   },
   {
@@ -258,9 +300,11 @@
     "type": 1,
     "element": 205,
     "en": "Zhu Yuan",
-    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/IconRole23.png",
-    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/IconRoleSelect23.png",
+    "camp": 7,
+    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/1241.png",
+    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/1241.png",
     "halfPortrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits/1241.png",
+    "iconHoyo": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/hoyo-avatar/1241.png",
     "halfPortrait170": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits-170/1241.png"
   },
   {
@@ -270,9 +314,11 @@
     "type": 2,
     "element": 203,
     "en": "Qingyi",
-    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/IconRole29.png",
-    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/IconRoleSelect29.png",
+    "camp": 7,
+    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/1251.png",
+    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/1251.png",
     "halfPortrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits/1251.png",
+    "iconHoyo": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/hoyo-avatar/1251.png",
     "halfPortrait170": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits-170/1251.png"
   },
   {
@@ -282,9 +328,11 @@
     "type": 3,
     "element": 200,
     "en": "Jane",
-    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/IconRole24.png",
-    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/IconRoleSelect24.png",
+    "camp": 7,
+    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/1261.png",
+    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/1261.png",
     "halfPortrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits/1261.png",
+    "iconHoyo": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/hoyo-avatar/1261.png",
     "halfPortrait170": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits-170/1261.png"
   },
   {
@@ -294,9 +342,11 @@
     "type": 5,
     "element": 203,
     "en": "Seth",
-    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/IconRole30.png",
-    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/IconRoleSelect30.png",
+    "camp": 7,
+    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/1271.png",
+    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/1271.png",
     "halfPortrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits/1271.png",
+    "iconHoyo": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/hoyo-avatar/1271.png",
     "halfPortrait170": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits-170/1271.png"
   },
   {
@@ -306,9 +356,11 @@
     "type": 3,
     "element": 200,
     "en": "Piper",
-    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/IconRole28.png",
-    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/IconRoleSelect28.png",
+    "camp": 4,
+    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/1281.png",
+    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/1281.png",
     "halfPortrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits/1281.png",
+    "iconHoyo": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/hoyo-avatar/1281.png",
     "halfPortrait170": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits-170/1281.png"
   },
   {
@@ -318,9 +370,11 @@
     "type": 4,
     "element": 205,
     "en": "Astra Yao",
-    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/IconRole36.png",
-    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/IconRoleSelect36.png",
+    "camp": 8,
+    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/1311.png",
+    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/1311.png",
     "halfPortrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits/1311.png",
+    "iconHoyo": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/hoyo-avatar/1311.png",
     "halfPortrait170": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits-170/1311.png"
   },
   {
@@ -330,9 +384,11 @@
     "type": 1,
     "element": 201,
     "en": "Evelyn",
-    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/IconRole37.png",
-    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/IconRoleSelect37.png",
+    "camp": 8,
+    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/1321.png",
+    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/1321.png",
     "halfPortrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits/1321.png",
+    "iconHoyo": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/hoyo-avatar/1321.png",
     "halfPortrait170": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits-170/1321.png"
   },
   {
@@ -342,9 +398,11 @@
     "type": 2,
     "element": 200,
     "en": "Pulchra",
-    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/IconRole38.png",
-    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/IconRoleSelect38.png",
+    "camp": 4,
+    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/1351.png",
+    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/1351.png",
     "halfPortrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits/1351.png",
+    "iconHoyo": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/hoyo-avatar/1351.png",
     "halfPortrait170": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits-170/1351.png"
   },
   {
@@ -354,9 +412,11 @@
     "type": 1,
     "element": 203,
     "en": "Soldier 0 - Anby",
-    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/IconRole40.png",
-    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/IconRoleSelect40.png",
+    "camp": 5,
+    "portrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/portraits/1381.png",
+    "icon": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/icons/1381.png",
     "halfPortrait": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits/1381.png",
+    "iconHoyo": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/hoyo-avatar/1381.png",
     "halfPortrait170": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/characters/half-portraits-170/1381.png"
   }
 ]
