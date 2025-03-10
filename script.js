@@ -56,6 +56,9 @@ async function processCharacters() {
       // Формируем URL для загрузки
       const portraitWebpUrl = `https://api.hakush.in/zzz/UI/${character.icon}.webp`;
       const iconWebpUrl = `https://api.hakush.in/zzz/UI/${character.icon.replace('IconRole', 'IconRoleSelect')}.webp`;
+      const halfPortraitHoyoUrl = `https://act-webstatic.hoyoverse.com/game_record/zzzv2/role_vertical_painting/role_vertical_painting_${id}.png`
+
+      const halfPortraitHoyoUrlBuffer = (await axios.get(halfPortraitHoyoUrl, { responseType: 'arraybuffer' })).data;
 
       // Скачиваем webp
       const portraitWebpBuffer = (await axios.get(portraitWebpUrl, { responseType: 'arraybuffer' })).data;
@@ -68,14 +71,17 @@ async function processCharacters() {
       // Пути для загрузки
       const portraitFilePath = `images/characters/portraits/${character.icon}.png`;
       const iconFilePath = `images/characters/icons/${character.icon.replace('IconRole', 'IconRoleSelect')}.png`;
+      const halfPortraitFilePath = `images/characters/half-portraits/${id}.png`;
 
       // Загружаем в GitHub
       await uploadToGitHub(portraitFilePath, portraitPngBuffer, `Upload portrait for ${character.code}`);
       await uploadToGitHub(iconFilePath, iconPngBuffer, `Upload icon for ${character.code}`);
+      await uploadToGitHub(halfPortraitFilePath, halfPortraitHoyoUrlBuffer, `Upload half portrait for ${character.code}`)
 
       // Формируем ссылки для JSON
       const portraitGitHubUrl = `https://raw.githubusercontent.com/${GITHUB_USER}/${REPO_NAME}/${BRANCH}/${portraitFilePath}`;
       const iconGitHubUrl = `https://raw.githubusercontent.com/${GITHUB_USER}/${REPO_NAME}/${BRANCH}/${iconFilePath}`;
+      const halfPortraitGitHubUrl = `https://raw.githubusercontent.com/${GITHUB_USER}/${REPO_NAME}/${BRANCH}/${halfPortraitFilePath}`
 
       results.push({
         id,
@@ -86,6 +92,7 @@ async function processCharacters() {
         en: character.EN,
         portrait: portraitGitHubUrl,
         icon: iconGitHubUrl,
+        halfPortrait: halfPortraitGitHubUrl,
       });
     }
 
