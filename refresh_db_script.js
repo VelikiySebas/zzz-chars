@@ -2,8 +2,8 @@ const fs = require('fs');
 const mongoose = require('mongoose');
 require('dotenv').config();
 
-const dbUrl = process.env.DB_URL;
-if (!dbUrl) {
+const DB_URL = process.env.DB_URL;
+if (!DB_URL) {
   throw new Error('Ссылка на базу данных не найдена');
 }
 const agentsJsonPath = './characters.json';
@@ -81,7 +81,7 @@ const refreshCollection = async (coll, data, originalFile) => {
   return data;
 };
 
-mongoose.connect(dbUrl).then(async () => {
+mongoose.connect(DB_URL).then(async () => {
   console.log('[START]: Db refresh');
 
   // Characters
