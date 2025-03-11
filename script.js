@@ -12,6 +12,10 @@ const GITHUB_USER = process.env.GITHUB_USER;
 const REPO_NAME = process.env.REPO_NAME;
 const BRANCH = process.env.BRANCH;
 
+if (!GITHUB_USER || !REPO_NAME || !BRANCH) {
+  throw new Error('Одно из полей не найдено: GITHUB_USER, REPO_NAME, BRANCH');
+}
+
 // Функция для загрузки одного файла в GitHub
 async function uploadToGitHub(filePath, contentBuffer, commitMessage) {
   const fileName = path.basename(filePath);
@@ -33,7 +37,7 @@ async function uploadToGitHub(filePath, contentBuffer, commitMessage) {
           Authorization: `Bearer ${GITHUB_TOKEN}`,
           Accept: 'application/vnd.github.v3+json',
         },
-      }
+      },
     );
     console.log(`Файл ${fileName} успешно загружен. Ссылка: ${res.data.content.html_url}`);
   } catch (error) {
@@ -41,8 +45,29 @@ async function uploadToGitHub(filePath, contentBuffer, commitMessage) {
   }
 }
 
-async function processCharacters() {
+// Функция для обновления json файла
+async function updateFile(filePath, data) {
+  const fileData = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+  for (let item of data) {
+    const foundedItemIndex = fileData.findIndex((fileItem) => fileItem.id === item.id);
+    if (foundedItemIndex === -1) {
+      fileData.push(item);
+      continue;
+    }
+    if (fileData[foundedItemIndex].en !== item.en) fileData[foundedItemIndex].en = item.en;
+    if (fileData[foundedItemIndex].portrait !== item.portrait) fileData[foundedItemIndex].portrait = item.portrait;
+    if (fileData[foundedItemIndex].icon !== item.icon) fileData[foundedItemIndex].icon = item.icon;
+    if (fileData[foundedItemIndex].halfPortrait !== item.halfPortrait) fileData[foundedItemIndex].halfPortrait = item.halfPortrait;
+    if (fileData[foundedItemIndex].halfPortrait170 !== item.halfPortrait170) fileData[foundedItemIndex].halfPortrait170 = item.halfPortrait170;
+    if (fileData[foundedItemIndex].iconHoyo !== item.iconHoyo) fileData[foundedItemIndex].iconHoyo = item.iconHoyo;
+    if (fileData[foundedItemIndex].iconUrl !== item.iconUrl) fileData[foundedItemIndex].iconUrl = item.iconUrl;
+  }
+  fs.writeFileSync(filePath, JSON.stringify(fileData), 'utf8');
+}
+
+async function processCharacters(isUploadToGitHub = true, isUpdateFile = true) {
   try {
+    console.log('Начинаем обработку персонажей');
     const response = await axios.get('https://api.hakush.in/zzz/data/character.json');
     const data = response.data;
 
@@ -70,13 +95,13 @@ async function processCharacters() {
         console.error(`Ошибка при загрузке halfPortraitHoyoUrl для персонажа ${character.code}:`, error);
       }
 
-            // Получение half portrait
-            try {
-              const iconHoyoUrlHoyoResponse = await axios.get(iconHoyoUrl, { responseType: 'arraybuffer' });
-              iconHoyoUrlBuffer = iconHoyoUrlHoyoResponse.data;
-            } catch (error) {
-              console.error(`Ошибка при загрузке iconHoyoUrl для персонажа ${character.code}:`, error);
-            }
+      // Получение half portrait
+      try {
+        const iconHoyoUrlHoyoResponse = await axios.get(iconHoyoUrl, { responseType: 'arraybuffer' });
+        iconHoyoUrlBuffer = iconHoyoUrlHoyoResponse.data;
+      } catch (error) {
+        console.error(`Ошибка при загрузке iconHoyoUrl для персонажа ${character.code}:`, error);
+      }
 
       // Получение portrait webp
       try {
@@ -118,26 +143,27 @@ async function processCharacters() {
       const iconHoyoUrlFilePath = `images/characters/hoyo-avatar/${id}.png`;
 
       // Загружаем в GitHub оригинальные изображения
-      try {
-        await uploadToGitHub(portraitFilePath, portraitPngBuffer, `Upload portrait for ${character.code}`);
-        await uploadToGitHub(iconFilePath, iconPngBuffer, `Upload icon for ${character.code}`);
-        await uploadToGitHub(halfPortraitFilePath, halfPortraitHoyoUrlBuffer, `Upload half portrait for ${character.code}`);
-        await uploadToGitHub(iconHoyoUrlFilePath, iconHoyoUrlBuffer, `Upload hoyo icon portrait for ${character.code}`);
-      } catch (error) {
-        console.error(`Ошибка при загрузке файлов на GitHub для персонажа ${character.code}:`, error);
-        continue;
+      if (isUploadToGitHub) {
+        try {
+          await uploadToGitHub(portraitFilePath, portraitPngBuffer, `Upload portrait for ${character.code}`);
+          await uploadToGitHub(iconFilePath, iconPngBuffer, `Upload icon for ${character.code}`);
+          await uploadToGitHub(halfPortraitFilePath, halfPortraitHoyoUrlBuffer, `Upload half portrait for ${character.code}`);
+          await uploadToGitHub(iconHoyoUrlFilePath, iconHoyoUrlBuffer, `Upload hoyo icon portrait for ${character.code}`);
+        } catch (error) {
+          console.error(`Ошибка при загрузке файлов на GitHub для персонажа ${character.code}:`, error);
+          continue;
+        }
       }
 
       // Создаём уменьшенную версию half portrait (326x170)
-      try {
-        const halfPortraitResizedBuffer = await sharp(halfPortraitHoyoUrlBuffer)
-          .resize(326, 170)
-          .png()
-          .toBuffer();
-        await uploadToGitHub(halfPortrait170FilePath, halfPortraitResizedBuffer, `Upload resized half portrait for ${character.code}`);
-      } catch (error) {
-        console.error(`Ошибка при создании/загрузке уменьшенного half portrait для персонажа ${character.code}:`, error);
-        // Если не удалось создать уменьшенную версию, можно продолжить без неё
+      if (isUploadToGitHub) {
+        try {
+          const halfPortraitResizedBuffer = await sharp(halfPortraitHoyoUrlBuffer).resize(326, 170).png().toBuffer();
+          await uploadToGitHub(halfPortrait170FilePath, halfPortraitResizedBuffer, `Upload resized half portrait for ${character.code}`);
+        } catch (error) {
+          console.error(`Ошибка при создании/загрузке уменьшенного half portrait для персонажа ${character.code}:`, error);
+          // Если не удалось создать уменьшенную версию, можно продолжить без неё
+        }
       }
 
       // Формируем ссылки для JSON
@@ -160,22 +186,23 @@ async function processCharacters() {
         icon: iconGitHubUrl,
         halfPortrait: halfPortraitGitHubUrl,
         iconHoyo: iconHoyoGitHubUrl,
-        halfPortrait170: halfPortrait170GitHubUrl // добавляем ссылку на уменьшенную версию
+        halfPortrait170: halfPortrait170GitHubUrl, // добавляем ссылку на уменьшенную версию
       });
     }
 
-    fs.writeFileSync('characters.json', JSON.stringify(results, null, 2), 'utf-8');
+    if (isUpdateFile) {
+      updateFile('characters.json', results);
+    }
     console.log('Персонажи обработаны и сохранены в characters.json');
   } catch (error) {
     console.error('Ошибка при обработке персонажей:', error);
   }
 }
 
-
-
 // Функция обработки оружия
-async function processWeapons() {
+async function processWeapons(isUploadToGitHub = true, isUpdateFile = true) {
   try {
+    console.log('Начинаем обработку оружия');
     const response = await axios.get('https://api.hakush.in/zzz/data/weapon.json');
     const data = response.data;
 
@@ -195,7 +222,9 @@ async function processWeapons() {
       const weaponFilePath = `images/weapons/engines/${weapon.icon}.png`;
 
       // Загружаем в GitHub
-      await uploadToGitHub(weaponFilePath, weaponPngBuffer, `Upload weapon icon for ${weapon.EN}`);
+      if (isUploadToGitHub) {
+        await uploadToGitHub(weaponFilePath, weaponPngBuffer, `Upload weapon icon for ${weapon.EN}`);
+      }
 
       // Формируем ссылку для JSON
       const weaponGitHubUrl = `https://raw.githubusercontent.com/${GITHUB_USER}/${REPO_NAME}/${BRANCH}/${weaponFilePath}`;
@@ -210,7 +239,9 @@ async function processWeapons() {
       });
     }
 
-    fs.writeFileSync('weapons.json', JSON.stringify(results, null, 2), 'utf-8');
+    if (isUpdateFile) {
+      updateFile('weapons.json', results);
+    }
     console.log('Оружие обработано и сохранено в weapons.json');
   } catch (error) {
     console.error('Ошибка при обработке оружия:', error);
@@ -218,9 +249,9 @@ async function processWeapons() {
 }
 
 // Основная функция
-async function fetchAndProcessData() {
-  await processCharacters();
-  await processWeapons();
+async function fetchAndProcessData(isUploadToGitHub = true, isUpdateFiles = true) {
+  await processCharacters(isUploadToGitHub, isUpdateFiles);
+  await processWeapons(isUploadToGitHub, isUpdateFiles);
 }
 
 // Запуск
