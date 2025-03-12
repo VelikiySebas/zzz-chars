@@ -30,8 +30,8 @@ const serializeAgents = (data) => {
     iconSrc: agent.icon,
     avatarSrc: agent.iconHoyo,
     portraitSrc: agent.portrait,
-    halfPortrait: agent.halfPortrait,
-    halfPortrait170: agent.halfPortrait170,
+    halfPortraitSrc: agent.halfPortrait,
+    halfPortrait170Src: agent.halfPortrait170,
     hoyoIconSrc: `https://act-webstatic.hoyoverse.com/game_record/zzzv2/role_square_avatar/role_square_avatar_${agent.id}.png`,
     hoyoImageSrc: `https://act-webstatic.hoyoverse.com/game_record/zzzv2/role_vertical_painting/role_vertical_painting_${agent.id}.png`,
   }));
