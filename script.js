@@ -65,6 +65,11 @@ async function updateFile(filePath, data) {
   fs.writeFileSync(filePath, JSON.stringify(fileData), 'utf8');
 }
 
+async function updateEnemiesFile(filePath, data) { 
+  fs.writeFileSync(filePath, JSON.stringify(data), 'utf8');
+}
+
+
 async function processCharacters(isUploadToGitHub = true, isUpdateFile = true) {
   try {
     console.log('Начинаем обработку персонажей');
@@ -248,10 +253,96 @@ async function processWeapons(isUploadToGitHub = true, isUpdateFile = true) {
   }
 }
 
+async function processEnemies(isUploadToGitHub = true, isUpdateFile = true) {
+  try {
+    console.log('Начинаем обработку enemies');
+
+    const node = 62017;
+
+    const response = await axios.get(`https://api.hakush.in/zzz/data/en/shiyu/${node}.json`);
+    const data = response.data;
+
+    const results = [];
+
+    for (let [zoneId, zone] of Object.entries(data.Zone).slice(-3)) {
+
+      const halfs = []
+
+      const roomId = zoneId[zoneId.length - 1]
+
+      for (let [layerId, layer] of Object.entries(zone.LayerRoom)) {
+
+        const enemies = []
+
+        const halfId = layerId[layerId.length - 1]
+
+        for (let [enemyId, enemy] of Object.entries(layer.MonsterList)) {
+
+
+          // Формируем URL для загрузки
+          const enemyImageTokens = enemy.Image.split(/([^/]+)\./);
+
+          const enemyWebpUrl = `https://api.hakush.in/zzz/UI/${enemyImageTokens[1]}.webp`;
+
+          // Скачиваем webp
+          const enemyWebpBuffer = (await axios.get(enemyWebpUrl, { responseType: 'arraybuffer' })).data;
+
+          // Конвертируем webp → png
+          const enemyPngBuffer = await sharp(enemyWebpBuffer).png().toBuffer();
+
+          // Пути для загрузки
+          const enemyFilePath = `images/enemies/${enemyImageTokens[1]}.png`;
+
+          // Загружаем в GitHub
+          if (isUploadToGitHub) {
+            await uploadToGitHub(enemyFilePath, enemyPngBuffer, `Upload weapon icon for ${enemy.EN}`);
+          }
+
+          // Формируем ссылку для JSON
+          const enemyGitHubUrl = `https://raw.githubusercontent.com/${GITHUB_USER}/${REPO_NAME}/${BRANCH}/${enemyFilePath}`;
+
+          enemies.push({
+            roomId,
+            halfId,
+            id: enemyId,
+            icon: enemyImageTokens[1],
+            name: enemy.Name,
+            element: enemy.Element,
+            stats: Object.entries(enemy.Stats).map(([key, value]) => ({ key, value: Math.floor(value) })).reduce((acc, { key, value }) => {
+              acc[key] = value
+              return acc
+            }, {}),
+            iconUrl: enemyGitHubUrl,
+          });
+        }
+        halfs.push({
+          roomId,
+          halfId,
+          enemies
+        })
+      }
+      console.log('zoneId', zoneId)
+      results.push({
+        node,
+        roomId,
+        halfs
+      });
+    }
+
+    if (isUpdateFile) {
+      updateEnemiesFile(`./nodes/enemies_${node}.json`, results);
+    }
+    console.log('enemies обработано и сохранено в enemies.json');
+  } catch (error) {
+    console.error('Ошибка при обработке enemies:', error);
+  }
+}
+
 // Основная функция
 async function fetchAndProcessData(isUploadToGitHub = true, isUpdateFiles = true) {
-  await processCharacters(isUploadToGitHub, isUpdateFiles);
-  await processWeapons(isUploadToGitHub, isUpdateFiles);
+  //await processCharacters(isUploadToGitHub, isUpdateFiles);
+  //await processWeapons(isUploadToGitHub, isUpdateFiles);
+  await processEnemies(isUploadToGitHub, isUpdateFiles);
 }
 
 // Запуск

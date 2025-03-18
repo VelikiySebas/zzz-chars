@@ -1,0 +1,496 @@
+[
+    {
+        "node": 62017,
+        "roomId": "5",
+        "halfs": [
+            {
+                "roomId": "5",
+                "halfId": "1",
+                "enemies": [
+                    {
+                        "roomId": "5",
+                        "halfId": "1",
+                        "id": "11115",
+                        "icon": "Monster_GiantGrey",
+                        "name": "Farbauti",
+                        "element": {
+                            "Ice": 1,
+                            "Fire": 0,
+                            "Electric": 0,
+                            "Ether": 1,
+                            "Physical": 0
+                        },
+                        "stats": {
+                            "Hp": 3726410,
+                            "Attack": 3107,
+                            "Defence": 857,
+                            "Stun": 9791,
+                            "AttributeInfliction": 0
+                        },
+                        "iconUrl": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_GiantGrey.png"
+                    },
+                    {
+                        "roomId": "5",
+                        "halfId": "1",
+                        "id": "11214",
+                        "icon": "Monster_ArlauneGrey",
+                        "name": "Arlaune",
+                        "element": {
+                            "Ice": 1,
+                            "Fire": 0,
+                            "Electric": 0,
+                            "Ether": 1,
+                            "Physical": 0
+                        },
+                        "stats": {
+                            "Hp": 2159236,
+                            "Attack": 1759,
+                            "Defence": 714,
+                            "Stun": 5454,
+                            "AttributeInfliction": 0
+                        },
+                        "iconUrl": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_ArlauneGrey.png"
+                    },
+                    {
+                        "roomId": "5",
+                        "halfId": "1",
+                        "id": "11682",
+                        "icon": "Monster_Fossor",
+                        "name": "Fossor",
+                        "element": {
+                            "Ice": 1,
+                            "Fire": 0,
+                            "Electric": 0,
+                            "Ether": 1,
+                            "Physical": 0
+                        },
+                        "stats": {
+                            "Hp": 645808,
+                            "Attack": 2228,
+                            "Defence": 635,
+                            "Stun": 2043,
+                            "AttributeInfliction": 0
+                        },
+                        "iconUrl": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_Fossor.png"
+                    },
+                    {
+                        "roomId": "5",
+                        "halfId": "1",
+                        "id": "11692",
+                        "icon": "Monster_Sordidus",
+                        "name": "Sordidus",
+                        "element": {
+                            "Ice": 1,
+                            "Fire": 0,
+                            "Electric": 0,
+                            "Ether": 1,
+                            "Physical": 0
+                        },
+                        "stats": {
+                            "Hp": 645808,
+                            "Attack": 2022,
+                            "Defence": 635,
+                            "Stun": 2043,
+                            "AttributeInfliction": 0
+                        },
+                        "iconUrl": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_Sordidus.png"
+                    }
+                ]
+            },
+            {
+                "roomId": "5",
+                "halfId": "2",
+                "enemies": [
+                    {
+                        "roomId": "5",
+                        "halfId": "2",
+                        "id": "11052",
+                        "icon": "Monster_GuardianPro",
+                        "name": "Guardian MK II",
+                        "element": {
+                            "Ice": 0,
+                            "Fire": -1,
+                            "Electric": 1,
+                            "Ether": 0,
+                            "Physical": 0
+                        },
+                        "stats": {
+                            "Hp": 3726410,
+                            "Attack": 3107,
+                            "Defence": 857,
+                            "Stun": 9791,
+                            "AttributeInfliction": 0
+                        },
+                        "iconUrl": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_GuardianPro.png"
+                    },
+                    {
+                        "roomId": "5",
+                        "halfId": "2",
+                        "id": "11251",
+                        "icon": "Monster_LightJaegerPro",
+                        "name": "Scout Jaeger",
+                        "element": {
+                            "Ice": 0,
+                            "Fire": 0,
+                            "Electric": 1,
+                            "Ether": 0,
+                            "Physical": 0
+                        },
+                        "stats": {
+                            "Hp": 479024,
+                            "Attack": 1935,
+                            "Defence": 635,
+                            "Stun": 1236,
+                            "AttributeInfliction": 0
+                        },
+                        "iconUrl": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_LightJaegerPro.png"
+                    },
+                    {
+                        "roomId": "5",
+                        "halfId": "2",
+                        "id": "11262",
+                        "icon": "Monster_HeavyFirepowerPro",
+                        "name": "Assault Gunner",
+                        "element": {
+                            "Ice": 0,
+                            "Fire": -1,
+                            "Electric": 1,
+                            "Ether": 0,
+                            "Physical": 0
+                        },
+                        "stats": {
+                            "Hp": 2918936,
+                            "Attack": 3107,
+                            "Defence": 857,
+                            "Stun": 6241,
+                            "AttributeInfliction": 0
+                        },
+                        "iconUrl": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_HeavyFirepowerPro.png"
+                    },
+                    {
+                        "roomId": "5",
+                        "halfId": "2",
+                        "id": "11281",
+                        "icon": "Monster_HeavyJaeger_Pro",
+                        "name": "Patrol Jaeger",
+                        "element": {
+                            "Ice": 0,
+                            "Fire": 0,
+                            "Electric": 1,
+                            "Ether": 0,
+                            "Physical": 0
+                        },
+                        "stats": {
+                            "Hp": 479024,
+                            "Attack": 1759,
+                            "Defence": 730,
+                            "Stun": 1236,
+                            "AttributeInfliction": 0
+                        },
+                        "iconUrl": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_HeavyJaeger_Pro.png"
+                    },
+                    {
+                        "roomId": "5",
+                        "halfId": "2",
+                        "id": "11442",
+                        "icon": "Monster_LightfootRoverPro",
+                        "name": "Lightfoot Rover MK II",
+                        "element": {
+                            "Ice": 0,
+                            "Fire": -1,
+                            "Electric": 1,
+                            "Ether": 0,
+                            "Physical": 0
+                        },
+                        "stats": {
+                            "Hp": 3135627,
+                            "Attack": 2667,
+                            "Defence": 857,
+                            "Stun": 8182,
+                            "AttributeInfliction": 0
+                        },
+                        "iconUrl": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_LightfootRoverPro.png"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "node": 62017,
+        "roomId": "6",
+        "halfs": [
+            {
+                "roomId": "6",
+                "halfId": "1",
+                "enemies": [
+                    {
+                        "roomId": "6",
+                        "halfId": "1",
+                        "id": "11311",
+                        "icon": "Monster_ThugAssaulterPro",
+                        "name": "Ambusher",
+                        "element": {
+                            "Ice": 0,
+                            "Fire": 1,
+                            "Electric": 0,
+                            "Ether": 0,
+                            "Physical": 1
+                        },
+                        "stats": {
+                            "Hp": 520827,
+                            "Attack": 1950,
+                            "Defence": 635,
+                            "Stun": 1320,
+                            "AttributeInfliction": 0
+                        },
+                        "iconUrl": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_ThugAssaulterPro.png"
+                    },
+                    {
+                        "roomId": "6",
+                        "halfId": "1",
+                        "id": "11321",
+                        "icon": "Monster_ThugPoacherPro",
+                        "name": "Rustler",
+                        "element": {
+                            "Ice": 0,
+                            "Fire": 1,
+                            "Electric": 0,
+                            "Ether": 0,
+                            "Physical": 1
+                        },
+                        "stats": {
+                            "Hp": 520827,
+                            "Attack": 1671,
+                            "Defence": 635,
+                            "Stun": 1320,
+                            "AttributeInfliction": 0
+                        },
+                        "iconUrl": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_ThugPoacherPro.png"
+                    },
+                    {
+                        "roomId": "6",
+                        "halfId": "1",
+                        "id": "11353",
+                        "icon": "Monster_ThugBulkyEnforcerBoss",
+                        "name": "Troublemaker - Wanted Enforcer",
+                        "element": {
+                            "Ice": -1,
+                            "Fire": 1,
+                            "Electric": 0,
+                            "Ether": 0,
+                            "Physical": 1
+                        },
+                        "stats": {
+                            "Hp": 9529792,
+                            "Attack": 3714,
+                            "Defence": 952,
+                            "Stun": 12194,
+                            "AttributeInfliction": 0
+                        },
+                        "iconUrl": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_ThugBulkyEnforcerBoss.png"
+                    }
+                ]
+            },
+            {
+                "roomId": "6",
+                "halfId": "2",
+                "enemies": [
+                    {
+                        "roomId": "6",
+                        "halfId": "2",
+                        "id": "11371",
+                        "icon": "Monster_BeholderEngine",
+                        "name": "Beholder Engine",
+                        "element": {
+                            "Ice": 0,
+                            "Fire": 0,
+                            "Electric": 1,
+                            "Ether": 1,
+                            "Physical": 0
+                        },
+                        "stats": {
+                            "Hp": 520827,
+                            "Attack": 1671,
+                            "Defence": 682,
+                            "Stun": 1320,
+                            "AttributeInfliction": 0
+                        },
+                        "iconUrl": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_BeholderEngine.png"
+                    },
+                    {
+                        "roomId": "6",
+                        "halfId": "2",
+                        "id": "11401",
+                        "icon": "Monster_MaterialHandler",
+                        "name": "Hans",
+                        "element": {
+                            "Ice": 0,
+                            "Fire": 0,
+                            "Electric": 1,
+                            "Ether": 0,
+                            "Physical": -1
+                        },
+                        "stats": {
+                            "Hp": 9981979,
+                            "Attack": 3714,
+                            "Defence": 952,
+                            "Stun": 15815,
+                            "AttributeInfliction": 0
+                        },
+                        "iconUrl": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_MaterialHandler.png"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "node": 62017,
+        "roomId": "7",
+        "halfs": [
+            {
+                "roomId": "7",
+                "halfId": "1",
+                "enemies": [
+                    {
+                        "roomId": "7",
+                        "halfId": "1",
+                        "id": "11127",
+                        "icon": "Monster_HatiEnergized",
+                        "name": "Hati Pack Leader — Energized",
+                        "element": {
+                            "Ice": 0,
+                            "Fire": 1,
+                            "Electric": -1,
+                            "Ether": 0,
+                            "Physical": 0
+                        },
+                        "stats": {
+                            "Hp": 11208728,
+                            "Attack": 4304,
+                            "Defence": 952,
+                            "Stun": 13026,
+                            "AttributeInfliction": 0
+                        },
+                        "iconUrl": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_HatiEnergized.png"
+                    },
+                    {
+                        "roomId": "7",
+                        "halfId": "1",
+                        "id": "11684",
+                        "icon": "Monster_FossorPro",
+                        "name": "Fossor - Energized",
+                        "element": {
+                            "Ice": 0,
+                            "Fire": 1,
+                            "Electric": 0,
+                            "Ether": 0,
+                            "Physical": 0
+                        },
+                        "stats": {
+                            "Hp": 825871,
+                            "Attack": 2478,
+                            "Defence": 635,
+                            "Stun": 2331,
+                            "AttributeInfliction": 0
+                        },
+                        "iconUrl": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_FossorPro.png"
+                    },
+                    {
+                        "roomId": "7",
+                        "halfId": "1",
+                        "id": "11694",
+                        "icon": "Monster_SordidusPro",
+                        "name": "Sordidus - Energized",
+                        "element": {
+                            "Ice": 0,
+                            "Fire": 1,
+                            "Electric": 0,
+                            "Ether": 0,
+                            "Physical": 0
+                        },
+                        "stats": {
+                            "Hp": 825871,
+                            "Attack": 2249,
+                            "Defence": 635,
+                            "Stun": 2331,
+                            "AttributeInfliction": 0
+                        },
+                        "iconUrl": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_SordidusPro.png"
+                    }
+                ]
+            },
+            {
+                "roomId": "7",
+                "halfId": "2",
+                "enemies": [
+                    {
+                        "roomId": "7",
+                        "halfId": "2",
+                        "id": "11271",
+                        "icon": "Monster_MeleeJaegerPro",
+                        "name": "Private Jaeger",
+                        "element": {
+                            "Ice": 0,
+                            "Fire": 0,
+                            "Electric": 1,
+                            "Ether": 0,
+                            "Physical": 0
+                        },
+                        "stats": {
+                            "Hp": 584740,
+                            "Attack": 2152,
+                            "Defence": 635,
+                            "Stun": 1410,
+                            "AttributeInfliction": 0
+                        },
+                        "iconUrl": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_MeleeJaegerPro.png"
+                    },
+                    {
+                        "roomId": "7",
+                        "halfId": "2",
+                        "id": "11762",
+                        "icon": "Monster_GrenadierJaegerPro",
+                        "name": "Demolition Jaeger",
+                        "element": {
+                            "Ice": 0,
+                            "Fire": 0,
+                            "Electric": 1,
+                            "Ether": 0,
+                            "Physical": 0
+                        },
+                        "stats": {
+                            "Hp": 786249,
+                            "Attack": 1923,
+                            "Defence": 635,
+                            "Stun": 2220,
+                            "AttributeInfliction": 0
+                        },
+                        "iconUrl": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_GrenadierJaegerPro.png"
+                    },
+                    {
+                        "roomId": "7",
+                        "halfId": "2",
+                        "id": "11971",
+                        "icon": "Monster_TacticalAssaultGunner",
+                        "name": "Specialized Assault Bomber",
+                        "element": {
+                            "Ice": 0,
+                            "Fire": -1,
+                            "Electric": 1,
+                            "Ether": 0,
+                            "Physical": 0
+                        },
+                        "stats": {
+                            "Hp": 9693258,
+                            "Attack": 4695,
+                            "Defence": 952,
+                            "Stun": 14327,
+                            "AttributeInfliction": 0
+                        },
+                        "iconUrl": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_TacticalAssaultGunner.png"
+                    }
+                ]
+            }
+        ]
+    }
+]
