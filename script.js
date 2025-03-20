@@ -280,6 +280,7 @@ async function processEnemies(node, begin, end, isUploadToGitHub = true, isUpdat
       const halves = [];
 
       const roomId = zoneId[zoneId.length - 1];
+      const monsterLevel = zone.MonsterLevel;
 
       for (let [layerId, layer] of Object.entries(zone.LayerRoom)) {
         const enemies = [];
@@ -314,6 +315,8 @@ async function processEnemies(node, begin, end, isUploadToGitHub = true, isUpdat
             half: Number(halfId),
             enkaId: enemyId,
             name: enemy.Name,
+            level: Number(monsterLevel),
+            position: Number(50),
             attributes: Object.entries(enemy.Element).reduce((acc, [key, value]) => {
               acc[Attributes[key]] = value;
               return acc;
@@ -383,7 +386,7 @@ async function processShiyu(isUploadToGitHub = true, isUpdateFiles = true) {
 }
 
 // Основная функция
-async function fetchAndProcessData(isUploadToGitHub = true, isUpdateFiles = true) {
+async function fetchAndProcessData(isUploadToGitHub = false, isUpdateFiles = true) {
   //await processCharacters(isUploadToGitHub, isUpdateFiles);
   //await processWeapons(isUploadToGitHub, isUpdateFiles);
   await processShiyu(isUploadToGitHub, isUpdateFiles);

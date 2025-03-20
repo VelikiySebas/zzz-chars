@@ -9,7 +9,7 @@ if (!dbUrl) {
 const agentsJsonPath = './characters.json';
 const enginesJsonPath = './weapons.json';
 const bangbooJsonPath = './bangboo.json';
-const shiyuJsonPath = './nodes/enemies_62017.json';
+const shiyuJsonPath = './nodes/enemies_62019.json';
 
 // File operations
 const readFile = (path) => JSON.parse(fs.readFileSync(path, 'utf8'));
@@ -106,7 +106,7 @@ const refreshShiyuCollection = async (coll, data, originalFile) => {
 mongoose.connect(dbUrl).then(async () => {
   console.log('[START]: Db refresh');
 
-  // // Characters
+  // Characters
   const agentsFileData = readFile(agentsJsonPath);
   const agents = serializeAgents(agentsFileData);
   await refreshCollection('agents', agents, agentsFileData);
