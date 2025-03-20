@@ -9,6 +9,7 @@ if (!dbUrl) {
 const agentsJsonPath = './characters.json';
 const enginesJsonPath = './weapons.json';
 const bangbooJsonPath = './bangboo.json';
+const shiyuJsonPath = './nodes/enemies_62017.json';
 
 // File operations
 const readFile = (path) => JSON.parse(fs.readFileSync(path, 'utf8'));
@@ -63,6 +64,13 @@ const serializeBangboos = (data) => {
   }));
 };
 
+const serializeShiyu = (data) => {
+  return {
+    _id: new mongoose.Types.ObjectId(data._id),
+    ...data,
+  };
+};
+
 // Db refresh function
 const refreshCollection = async (coll, data, originalFile) => {
   console.log(`Start refresh collection ${coll}. Data length: ${data.length}`);
@@ -80,11 +88,25 @@ const refreshCollection = async (coll, data, originalFile) => {
   }
   return data;
 };
+const refreshShiyuCollection = async (coll, data, originalFile) => {
+  console.log(`Start refresh collection ${coll}. Data length: ${data.length}`);
+  const collection = mongoose.connection.db.collection(coll);
+  const refreshItem = { ...data, begin: new Date(data.begin), end: new Date(data.end) };
+  delete refreshItem._id;
+  let item = await collection.findOneAndUpdate({ node: data.node }, { $set: refreshItem }, { upsert: true, new: true });
+  if (!item) {
+    item = await collection.findOne({ node: data.node });
+  }
+  if (item._id !== data.node._id) {
+    originalFile._id = item._id;
+  }
+  return data;
+};
 
 mongoose.connect(dbUrl).then(async () => {
   console.log('[START]: Db refresh');
 
-  // Characters
+  // // Characters
   const agentsFileData = readFile(agentsJsonPath);
   const agents = serializeAgents(agentsFileData);
   await refreshCollection('agents', agents, agentsFileData);
@@ -101,6 +123,12 @@ mongoose.connect(dbUrl).then(async () => {
   const bangboos = serializeBangboos(bangboosFileData);
   await refreshCollection('bangboos', bangboos, bangboosFileData);
   writeFile(bangbooJsonPath, bangboosFileData);
+
+  // Shiyu
+  const shiyuFileData = readFile(shiyuJsonPath);
+  const shiyu = serializeShiyu(shiyuFileData);
+  await refreshShiyuCollection('shiyu', shiyu, shiyuFileData);
+  writeFile(shiyuJsonPath, shiyuFileData);
 
   console.log('[DONE]: Db refresh');
   mongoose.connection.close();

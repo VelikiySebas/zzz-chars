@@ -2,7 +2,13 @@ const axios = require('axios');
 const fs = require('fs');
 const path = require('path');
 const sharp = require('sharp');
+const dayjs = require('dayjs');
+const utc = require('dayjs/plugin/utc');
+const timezone = require('dayjs/plugin/timezone');
 require('dotenv').config();
+
+dayjs.extend(utc);
+dayjs.extend(timezone);
 
 // ----------------------
 // Конфигурация
@@ -15,6 +21,14 @@ const BRANCH = process.env.BRANCH;
 if (!GITHUB_USER || !REPO_NAME || !BRANCH) {
   throw new Error('Одно из полей не найдено: GITHUB_USER, REPO_NAME, BRANCH');
 }
+
+const Attributes = {
+  Physical: 200,
+  Fire: 201,
+  Ice: 202,
+  Ether: 205,
+  Electric: 203,
+};
 
 // Функция для загрузки одного файла в GitHub
 async function uploadToGitHub(filePath, contentBuffer, commitMessage) {
@@ -65,10 +79,11 @@ async function updateFile(filePath, data) {
   fs.writeFileSync(filePath, JSON.stringify(fileData), 'utf8');
 }
 
-async function updateEnemiesFile(filePath, data) { 
+async function updateEnemiesFile(filePath, data) {
+  const fileData = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+  if (fileData?._id) data._id = fileData._id;
   fs.writeFileSync(filePath, JSON.stringify(data), 'utf8');
 }
-
 
 async function processCharacters(isUploadToGitHub = true, isUpdateFile = true) {
   try {
@@ -253,32 +268,25 @@ async function processWeapons(isUploadToGitHub = true, isUpdateFile = true) {
   }
 }
 
-async function processEnemies(isUploadToGitHub = true, isUpdateFile = true) {
+async function processEnemies(node, begin, end, isUploadToGitHub = true, isUpdateFile = true) {
   try {
     console.log('Начинаем обработку enemies');
-
-    const node = 62017;
-
     const response = await axios.get(`https://api.hakush.in/zzz/data/en/shiyu/${node}.json`);
     const data = response.data;
 
     const results = [];
 
     for (let [zoneId, zone] of Object.entries(data.Zone).slice(-3)) {
+      const halves = [];
 
-      const halfs = []
-
-      const roomId = zoneId[zoneId.length - 1]
+      const roomId = zoneId[zoneId.length - 1];
 
       for (let [layerId, layer] of Object.entries(zone.LayerRoom)) {
+        const enemies = [];
 
-        const enemies = []
-
-        const halfId = layerId[layerId.length - 1]
+        const halfId = layerId[layerId.length - 1];
 
         for (let [enemyId, enemy] of Object.entries(layer.MonsterList)) {
-
-
           // Формируем URL для загрузки
           const enemyImageTokens = enemy.Image.split(/([^/]+)\./);
 
@@ -302,35 +310,48 @@ async function processEnemies(isUploadToGitHub = true, isUpdateFile = true) {
           const enemyGitHubUrl = `https://raw.githubusercontent.com/${GITHUB_USER}/${REPO_NAME}/${BRANCH}/${enemyFilePath}`;
 
           enemies.push({
-            roomId,
-            halfId,
-            id: enemyId,
-            icon: enemyImageTokens[1],
+            room: Number(roomId),
+            half: Number(halfId),
+            enkaId: enemyId,
             name: enemy.Name,
-            element: enemy.Element,
-            stats: Object.entries(enemy.Stats).map(([key, value]) => ({ key, value: Math.floor(value) })).reduce((acc, { key, value }) => {
-              acc[key] = value
-              return acc
+            attributes: Object.entries(enemy.Element).reduce((acc, [key, value]) => {
+              acc[Attributes[key]] = value;
+              return acc;
             }, {}),
-            iconUrl: enemyGitHubUrl,
+            stats: {
+              hp: Math.floor(enemy.Stats.Hp),
+            },
+            // stats: Object.entries(enemy.Stats)
+            //   .map(([key, value]) => ({ key, value: Math.floor(value) }))
+            //   .reduce((acc, { key, value }) => {
+            //     if (key === 'Defence') key = 'Defense';
+            //     acc[key] = value;
+            //     return acc;
+            //   }, {}),
+            iconSrc: enemyGitHubUrl,
           });
         }
-        halfs.push({
-          roomId,
-          halfId,
-          enemies
-        })
+        halves.push({
+          room: Number(roomId),
+          half: Number(halfId),
+          enemies,
+        });
       }
-      console.log('zoneId', zoneId)
+      console.log('zoneId', zoneId);
       results.push({
         node,
-        roomId,
-        halfs
+        room: Number(roomId),
+        halves,
       });
     }
 
     if (isUpdateFile) {
-      updateEnemiesFile(`./nodes/enemies_${node}.json`, results);
+      updateEnemiesFile(`./nodes/enemies_${node}.json`, {
+        node,
+        begin,
+        end,
+        rooms: results,
+      });
     }
     console.log('enemies обработано и сохранено в enemies.json');
   } catch (error) {
@@ -338,11 +359,34 @@ async function processEnemies(isUploadToGitHub = true, isUpdateFile = true) {
   }
 }
 
+async function processShiyu(isUploadToGitHub = true, isUpdateFiles = true) {
+  // Get actual nodes (include current)
+  const shiyuListResponse = (await axios.get('https://api.hakush.in/zzz/data/shiyu.json'))?.data ?? {};
+  const actualShiyuNodes = Object.entries(shiyuListResponse)
+    .filter(([key, value]) => {
+      if (!value.live_begin) return false;
+      const endDate = dayjs.tz(value.live_end, 'Etc/GMT-1').toDate();
+      if (endDate.getTime() < Date.now()) return false;
+      return true;
+    })
+    .map(([key, value]) => {
+      return {
+        node: key,
+        begin: dayjs.tz(value.live_begin, 'Etc/GMT-1').toDate(),
+        end: dayjs.tz(value.live_end, 'Etc/GMT-1').toDate(),
+      };
+    });
+
+  for (let { node, begin, end } of actualShiyuNodes) {
+    await processEnemies(node, begin, end, isUploadToGitHub, isUpdateFiles);
+  }
+}
+
 // Основная функция
 async function fetchAndProcessData(isUploadToGitHub = true, isUpdateFiles = true) {
   //await processCharacters(isUploadToGitHub, isUpdateFiles);
   //await processWeapons(isUploadToGitHub, isUpdateFiles);
-  await processEnemies(isUploadToGitHub, isUpdateFiles);
+  await processShiyu(isUploadToGitHub, isUpdateFiles);
 }
 
 // Запуск
