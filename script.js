@@ -340,7 +340,6 @@ async function processEnemies(node, begin, end, isUploadToGitHub = true, isUpdat
           enemies,
         });
       }
-      console.log('zoneId', zoneId);
       results.push({
         node,
         room: Number(roomId),
@@ -356,7 +355,7 @@ async function processEnemies(node, begin, end, isUploadToGitHub = true, isUpdat
         rooms: results,
       });
     }
-    console.log('enemies обработано и сохранено в enemies.json');
+    console.log(`enemies обработано и сохранено в ./nodes/enemies_${node}.json`);
   } catch (error) {
     console.error('Ошибка при обработке enemies:', error);
   }
@@ -386,10 +385,10 @@ async function processShiyu(isUploadToGitHub = true, isUpdateFiles = true) {
 }
 
 // Основная функция
-async function fetchAndProcessData(isUploadToGitHub = false, isUpdateFiles = true) {
-  //await processCharacters(isUploadToGitHub, isUpdateFiles);
-  //await processWeapons(isUploadToGitHub, isUpdateFiles);
-  await processShiyu(isUploadToGitHub, isUpdateFiles);
+async function fetchAndProcessData(isUploadToGitHub = true, isUpdateFiles = true) {
+  // await processCharacters(isUploadToGitHub, isUpdateFiles);
+  // await processWeapons(isUploadToGitHub, isUpdateFiles);
+  // await processShiyu(isUploadToGitHub, isUpdateFiles);
 }
 
 // Запуск

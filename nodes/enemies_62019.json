@@ -1,1 +1,315 @@
-{"node":"62019","begin":"2025-04-11T03:00:00.000Z","end":"2025-04-25T02:59:59.000Z","rooms":[{"node":"62019","room":5,"halves":[{"room":5,"half":1,"enemies":[{"room":5,"half":1,"enkaId":"11045","name":"Enraged Sweeper","level":60,"position":50,"attributes":{"200":-1,"201":0,"202":0,"203":1,"205":0},"stats":{"hp":2986332},"iconSrc":"https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_RagingGuy.png"},{"room":5,"half":1,"enkaId":"11052","name":"Guardian MK II","level":60,"position":50,"attributes":{"200":0,"201":-1,"202":0,"203":1,"205":0},"stats":{"hp":3726410},"iconSrc":"https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_GuardianPro.png"},{"room":5,"half":1,"enkaId":"11162","name":"Harrier Jaeger","level":60,"position":50,"attributes":{"200":0,"201":0,"202":0,"203":1,"205":0},"stats":{"hp":688891},"iconSrc":"https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_StrikeJaegerPro.png"},{"room":5,"half":1,"enkaId":"11282","name":"Patrol Jaeger","level":60,"position":50,"attributes":{"200":0,"201":0,"202":0,"203":1,"205":0},"stats":{"hp":585664},"iconSrc":"https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_HeavyJaeger_Pro.png"},{"room":5,"half":1,"enkaId":"11442","name":"Lightfoot Rover MK II","level":60,"position":50,"attributes":{"200":0,"201":-1,"202":0,"203":1,"205":0},"stats":{"hp":3135627},"iconSrc":"https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_LightfootRoverPro.png"}]},{"room":5,"half":2,"enemies":[{"room":5,"half":2,"enkaId":"11185","name":"Thanatos","level":60,"position":50,"attributes":{"200":0,"201":0,"202":1,"203":0,"205":1},"stats":{"hp":3488817},"iconSrc":"https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_DeathXIIIGrey.png"},{"room":5,"half":2,"enkaId":"11194","name":"Armored Hati","level":60,"position":50,"attributes":{"200":0,"201":0,"202":1,"203":0,"205":1},"stats":{"hp":2768787},"iconSrc":"https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_HatiArmoredGrey.png"},{"room":5,"half":2,"enkaId":"11226","name":"Goblin","level":60,"position":50,"attributes":{"200":0,"201":0,"202":1,"203":0,"205":1},"stats":{"hp":3135627},"iconSrc":"https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_GoblinGrey.png"},{"room":5,"half":2,"enkaId":"11682","name":"Fossor","level":60,"position":50,"attributes":{"200":0,"201":0,"202":1,"203":0,"205":1},"stats":{"hp":645808},"iconSrc":"https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_Fossor.png"},{"room":5,"half":2,"enkaId":"11692","name":"Sordidus","level":60,"position":50,"attributes":{"200":0,"201":0,"202":1,"203":0,"205":1},"stats":{"hp":645808},"iconSrc":"https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_Sordidus.png"}]}]},{"node":"62019","room":6,"halves":[{"room":6,"half":1,"enemies":[{"room":6,"half":1,"enkaId":"11271","name":"Private Jaeger","level":65,"position":50,"attributes":{"200":0,"201":0,"202":0,"203":1,"205":0},"stats":{"hp":520827},"iconSrc":"https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_MeleeJaegerPro.png"},{"room":6,"half":1,"enkaId":"11762","name":"Demolition Jaeger","level":65,"position":50,"attributes":{"200":0,"201":0,"202":0,"203":1,"205":0},"stats":{"hp":700310},"iconSrc":"https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_GrenadierJaegerPro.png"},{"room":6,"half":1,"enkaId":"11971","name":"Specialized Assault Bomber","level":65,"position":50,"attributes":{"200":0,"201":-1,"202":0,"203":1,"205":0},"stats":{"hp":8633765},"iconSrc":"https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_TacticalAssaultGunner.png"}]},{"room":6,"half":2,"enemies":[{"room":6,"half":2,"enkaId":"11302","name":"Greta - Energized","level":65,"position":50,"attributes":{"200":-1,"201":1,"202":0,"203":0,"205":0},"stats":{"hp":9981979},"iconSrc":"https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_BoringMachineRed.png"},{"room":6,"half":2,"enkaId":"11684","name":"Fossor - Energized","level":65,"position":50,"attributes":{"200":0,"201":1,"202":0,"203":0,"205":0},"stats":{"hp":702165},"iconSrc":"https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_FossorPro.png"},{"room":6,"half":2,"enkaId":"11694","name":"Sordidus - Energized","level":65,"position":50,"attributes":{"200":0,"201":1,"202":0,"203":0,"205":0},"stats":{"hp":702165},"iconSrc":"https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_SordidusPro.png"}]}]},{"node":"62019","room":7,"halves":[{"room":7,"half":1,"enemies":[{"room":7,"half":1,"enkaId":"11281","name":"Patrol Jaeger","level":70,"position":50,"attributes":{"200":0,"201":0,"202":0,"203":1,"205":0},"stats":{"hp":598662},"iconSrc":"https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_HeavyJaeger_Pro.png"},{"room":7,"half":1,"enkaId":"11453","name":"Shielded Defender Omega","level":70,"position":50,"attributes":{"200":0,"201":-1,"202":0,"203":1,"205":0},"stats":{"hp":10953984},"iconSrc":"https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_HeavyStrikerBossPro.png"},{"room":7,"half":1,"enkaId":"11761","name":"Demolition Jaeger","level":70,"position":50,"attributes":{"200":0,"201":0,"202":0,"203":1,"205":0},"stats":{"hp":658369},"iconSrc":"https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_GrenadierJaegerPro.png"}]},{"room":7,"half":2,"enemies":[{"room":7,"half":2,"enkaId":"11682","name":"Fossor","level":70,"position":50,"attributes":{"200":0,"201":0,"202":1,"203":0,"205":1},"stats":{"hp":544324},"iconSrc":"https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_Fossor.png"},{"room":7,"half":2,"enkaId":"11692","name":"Sordidus","level":70,"position":50,"attributes":{"200":0,"201":0,"202":1,"203":0,"205":1},"stats":{"hp":544324},"iconSrc":"https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_Sordidus.png"},{"room":7,"half":2,"enkaId":"11951","name":"Palicus","level":70,"position":50,"attributes":{"200":0,"201":0,"202":1,"203":0,"205":1},"stats":{"hp":7387571},"iconSrc":"https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_Hecate.png"},{"room":7,"half":2,"enkaId":"11952","name":"Palicus","level":70,"position":50,"attributes":{"200":0,"201":0,"202":1,"203":0,"205":1},"stats":{"hp":7387571},"iconSrc":"https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_Hecate.png"}]}]}],"_id":"67dc8d4f07729297b04c5d14"}
+{
+  "node": "62019",
+  "begin": "2025-04-11T03:00:00.000Z",
+  "end": "2025-04-25T02:59:59.000Z",
+  "rooms": [
+    {
+      "node": "62019",
+      "room": 5,
+      "halves": [
+        {
+          "room": 5,
+          "half": 1,
+          "enemies": [
+            {
+              "room": 5,
+              "half": 1,
+              "enkaId": "11045",
+              "name": "Enraged Sweeper",
+              "level": 60,
+              "position": 50,
+              "attributes": { "200": -1, "201": 0, "202": 0, "203": 1, "205": 0 },
+              "stats": { "hp": 2986332 },
+              "iconSrc": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_RagingGuy.png"
+            },
+            {
+              "room": 5,
+              "half": 1,
+              "enkaId": "11052",
+              "name": "Guardian MK II",
+              "level": 60,
+              "position": 50,
+              "attributes": { "200": 0, "201": -1, "202": 0, "203": 1, "205": 0 },
+              "stats": { "hp": 3726410 },
+              "iconSrc": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_GuardianPro.png"
+            },
+            {
+              "room": 5,
+              "half": 1,
+              "enkaId": "11162",
+              "name": "Harrier Jaeger",
+              "level": 60,
+              "position": 50,
+              "attributes": { "200": 0, "201": 0, "202": 0, "203": 1, "205": 0 },
+              "stats": { "hp": 688891 },
+              "iconSrc": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_StrikeJaegerPro.png"
+            },
+            {
+              "room": 5,
+              "half": 1,
+              "enkaId": "11282",
+              "name": "Patrol Jaeger",
+              "level": 60,
+              "position": 50,
+              "attributes": { "200": 0, "201": 0, "202": 0, "203": 1, "205": 0 },
+              "stats": { "hp": 585664 },
+              "iconSrc": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_HeavyJaeger_Pro.png"
+            },
+            {
+              "room": 5,
+              "half": 1,
+              "enkaId": "11442",
+              "name": "Lightfoot Rover MK II",
+              "level": 60,
+              "position": 50,
+              "attributes": { "200": 0, "201": -1, "202": 0, "203": 1, "205": 0 },
+              "stats": { "hp": 3135627 },
+              "iconSrc": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_LightfootRoverPro.png"
+            }
+          ]
+        },
+        {
+          "room": 5,
+          "half": 2,
+          "enemies": [
+            {
+              "room": 5,
+              "half": 2,
+              "enkaId": "11185",
+              "name": "Thanatos",
+              "level": 60,
+              "position": 50,
+              "attributes": { "200": 0, "201": 0, "202": 1, "203": 0, "205": 1 },
+              "stats": { "hp": 3488817 },
+              "iconSrc": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_DeathXIIIGrey.png"
+            },
+            {
+              "room": 5,
+              "half": 2,
+              "enkaId": "11194",
+              "name": "Armored Hati",
+              "level": 60,
+              "position": 50,
+              "attributes": { "200": 0, "201": 0, "202": 1, "203": 0, "205": 1 },
+              "stats": { "hp": 2768787 },
+              "iconSrc": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_HatiArmoredGrey.png"
+            },
+            {
+              "room": 5,
+              "half": 2,
+              "enkaId": "11226",
+              "name": "Goblin",
+              "level": 60,
+              "position": 50,
+              "attributes": { "200": 0, "201": 0, "202": 1, "203": 0, "205": 1 },
+              "stats": { "hp": 3135627 },
+              "iconSrc": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_GoblinGrey.png"
+            },
+            {
+              "room": 5,
+              "half": 2,
+              "enkaId": "11682",
+              "name": "Fossor",
+              "level": 60,
+              "position": 50,
+              "attributes": { "200": 0, "201": 0, "202": 1, "203": 0, "205": 1 },
+              "stats": { "hp": 645808 },
+              "iconSrc": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_Fossor.png"
+            },
+            {
+              "room": 5,
+              "half": 2,
+              "enkaId": "11692",
+              "name": "Sordidus",
+              "level": 60,
+              "position": 50,
+              "attributes": { "200": 0, "201": 0, "202": 1, "203": 0, "205": 1 },
+              "stats": { "hp": 645808 },
+              "iconSrc": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_Sordidus.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "node": "62019",
+      "room": 6,
+      "halves": [
+        {
+          "room": 6,
+          "half": 1,
+          "enemies": [
+            {
+              "room": 6,
+              "half": 1,
+              "enkaId": "11271",
+              "name": "Private Jaeger",
+              "level": 65,
+              "position": 50,
+              "attributes": { "200": 0, "201": 0, "202": 0, "203": 1, "205": 0 },
+              "stats": { "hp": 520827 },
+              "iconSrc": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_MeleeJaegerPro.png"
+            },
+            {
+              "room": 6,
+              "half": 1,
+              "enkaId": "11762",
+              "name": "Demolition Jaeger",
+              "level": 65,
+              "position": 50,
+              "attributes": { "200": 0, "201": 0, "202": 0, "203": 1, "205": 0 },
+              "stats": { "hp": 700310 },
+              "iconSrc": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_GrenadierJaegerPro.png"
+            },
+            {
+              "room": 6,
+              "half": 1,
+              "enkaId": "11971",
+              "name": "Specialized Assault Bomber",
+              "level": 65,
+              "position": 50,
+              "attributes": { "200": 0, "201": -1, "202": 0, "203": 1, "205": 0 },
+              "stats": { "hp": 8633765 },
+              "iconSrc": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_TacticalAssaultGunner.png"
+            }
+          ]
+        },
+        {
+          "room": 6,
+          "half": 2,
+          "enemies": [
+            {
+              "room": 6,
+              "half": 2,
+              "enkaId": "11302",
+              "name": "Greta - Energized",
+              "level": 65,
+              "position": 50,
+              "attributes": { "200": -1, "201": 1, "202": 0, "203": 0, "205": 0 },
+              "stats": { "hp": 9981979 },
+              "iconSrc": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_BoringMachineRed.png"
+            },
+            {
+              "room": 6,
+              "half": 2,
+              "enkaId": "11684",
+              "name": "Fossor - Energized",
+              "level": 65,
+              "position": 50,
+              "attributes": { "200": 0, "201": 1, "202": 0, "203": 0, "205": 0 },
+              "stats": { "hp": 702165 },
+              "iconSrc": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_FossorPro.png"
+            },
+            {
+              "room": 6,
+              "half": 2,
+              "enkaId": "11694",
+              "name": "Sordidus - Energized",
+              "level": 65,
+              "position": 50,
+              "attributes": { "200": 0, "201": 1, "202": 0, "203": 0, "205": 0 },
+              "stats": { "hp": 702165 },
+              "iconSrc": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_SordidusPro.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "node": "62019",
+      "room": 7,
+      "halves": [
+        {
+          "room": 7,
+          "half": 1,
+          "enemies": [
+            {
+              "room": 7,
+              "half": 1,
+              "enkaId": "11281",
+              "name": "Patrol Jaeger",
+              "level": 70,
+              "position": 50,
+              "attributes": { "200": 0, "201": 0, "202": 0, "203": 1, "205": 0 },
+              "stats": { "hp": 598662 },
+              "iconSrc": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_HeavyJaeger_Pro.png"
+            },
+            {
+              "room": 7,
+              "half": 1,
+              "enkaId": "11453",
+              "name": "Shielded Defender Omega",
+              "level": 70,
+              "position": 50,
+              "attributes": { "200": 0, "201": -1, "202": 0, "203": 1, "205": 0 },
+              "stats": { "hp": 10953984 },
+              "iconSrc": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_HeavyStrikerBossPro.png"
+            },
+            {
+              "room": 7,
+              "half": 1,
+              "enkaId": "11761",
+              "name": "Demolition Jaeger",
+              "level": 70,
+              "position": 50,
+              "attributes": { "200": 0, "201": 0, "202": 0, "203": 1, "205": 0 },
+              "stats": { "hp": 658369 },
+              "iconSrc": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_GrenadierJaegerPro.png"
+            }
+          ]
+        },
+        {
+          "room": 7,
+          "half": 2,
+          "enemies": [
+            {
+              "room": 7,
+              "half": 2,
+              "enkaId": "11682",
+              "name": "Fossor",
+              "level": 70,
+              "position": 50,
+              "attributes": { "200": 0, "201": 0, "202": 1, "203": 0, "205": 1 },
+              "stats": { "hp": 544324 },
+              "iconSrc": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_Fossor.png"
+            },
+            {
+              "room": 7,
+              "half": 2,
+              "enkaId": "11692",
+              "name": "Sordidus",
+              "level": 70,
+              "position": 50,
+              "attributes": { "200": 0, "201": 0, "202": 1, "203": 0, "205": 1 },
+              "stats": { "hp": 544324 },
+              "iconSrc": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_Sordidus.png"
+            },
+            {
+              "room": 7,
+              "half": 2,
+              "enkaId": "11951",
+              "name": "Palicus",
+              "level": 70,
+              "position": 50,
+              "attributes": { "200": 0, "201": 0, "202": 1, "203": 0, "205": 1 },
+              "stats": { "hp": 7387571 },
+              "iconSrc": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_Hecate.png"
+            },
+            {
+              "room": 7,
+              "half": 2,
+              "enkaId": "11952",
+              "name": "Palicus",
+              "level": 70,
+              "position": 50,
+              "attributes": { "200": 0, "201": 0, "202": 1, "203": 0, "205": 1 },
+              "stats": { "hp": 7387571 },
+              "iconSrc": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_Hecate.png"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_id": "67dc955607729297b04c646c"
+}
