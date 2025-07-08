@@ -80,8 +80,12 @@ async function updateFile(filePath, data) {
 }
 
 async function updateEnemiesFile(filePath, data) {
-  const fileData = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-  if (fileData?._id) data._id = fileData._id;
+  try {
+    const fileData = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+    if (fileData?._id) data._id = fileData._id;
+  } catch (error) {
+    console.error(`Файл не найден: ${filePath}`);
+  }
   fs.writeFileSync(filePath, JSON.stringify(data), 'utf8');
 }
 
@@ -359,6 +363,29 @@ async function processEnemies(node, begin, end, isUploadToGitHub = true, isUpdat
   } catch (error) {
     console.error('Ошибка при обработке enemies:', error);
   }
+}
+
+async function processAvatars() {
+  const gitHubUrl = `https://raw.githubusercontent.com/${GITHUB_USER}/${REPO_NAME}/${BRANCH}`;
+  const dirPath = 'images/avatars';
+  const files = fs.readdirSync(dirPath);
+
+  const results = [];
+  for (const filename of files) {
+    const path = `${dirPath}/${filename}`;
+    const avatarGitHubUrl = `${gitHubUrl}/${path}`;
+    try {
+      const buffer = await sharp(path).png().toBuffer();
+      await uploadToGitHub(path, buffer, `Upload avatar with filename: ${filename}`);
+      results.push({ avatarSrc: avatarGitHubUrl, createdAt: new Date() });
+    } catch (error) {
+      console.error(`Ошибка при загрузке файлов на GitHub аватара ${filename}:`, error);
+      continue;
+    }
+  }
+
+  const resultFilePath = 'avatars.json';
+  fs.writeFileSync(resultFilePath, JSON.stringify(results), 'utf8');
 }
 
 async function processShiyu(isUploadToGitHub = true, isUpdateFiles = true) {
