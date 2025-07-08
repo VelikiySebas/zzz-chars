@@ -1,0 +1,304 @@
+{
+  "node": "62022",
+  "begin": "2025-05-23T03:00:00.000Z",
+  "end": "2025-06-06T02:59:59.000Z",
+  "rooms": [
+    {
+      "node": "62022",
+      "room": 5,
+      "halves": [
+        {
+          "room": 5,
+          "half": 1,
+          "enemies": [
+            {
+              "room": 5,
+              "half": 1,
+              "enkaId": "11052",
+              "name": "Guardian MK II",
+              "level": 60,
+              "position": 50,
+              "attributes": { "200": 0, "201": -1, "202": 0, "203": 1, "205": 0 },
+              "stats": { "hp": 4065175 },
+              "iconSrc": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_GuardianPro.png"
+            },
+            {
+              "room": 5,
+              "half": 1,
+              "enkaId": "11252",
+              "name": "Scout Jaeger",
+              "level": 60,
+              "position": 50,
+              "attributes": { "200": 0, "201": 0, "202": 0, "203": 1, "205": 0 },
+              "stats": { "hp": 638906 },
+              "iconSrc": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_LightJaegerPro.png"
+            },
+            {
+              "room": 5,
+              "half": 1,
+              "enkaId": "11272",
+              "name": "Private Jaeger",
+              "level": 60,
+              "position": 50,
+              "attributes": { "200": 0, "201": 0, "202": 0, "203": 1, "205": 0 },
+              "stats": { "hp": 638906 },
+              "iconSrc": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_MeleeJaegerPro.png"
+            },
+            {
+              "room": 5,
+              "half": 1,
+              "enkaId": "11442",
+              "name": "Lightfoot Rover MK II",
+              "level": 60,
+              "position": 50,
+              "attributes": { "200": 0, "201": -1, "202": 0, "203": 1, "205": 0 },
+              "stats": { "hp": 3420684 },
+              "iconSrc": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_LightfootRoverPro.png"
+            },
+            {
+              "room": 5,
+              "half": 1,
+              "enkaId": "11451",
+              "name": "Heavy Striker MK II",
+              "level": 60,
+              "position": 50,
+              "attributes": { "200": 0, "201": -1, "202": 0, "203": 1, "205": 0 },
+              "stats": { "hp": 4111243 },
+              "iconSrc": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_HeavyStrikerPro.png"
+            }
+          ]
+        },
+        {
+          "room": 5,
+          "half": 2,
+          "enemies": [
+            {
+              "room": 5,
+              "half": 2,
+              "enkaId": "11185",
+              "name": "Thanatos",
+              "level": 60,
+              "position": 50,
+              "attributes": { "200": 0, "201": 0, "202": 1, "203": 0, "205": 1 },
+              "stats": { "hp": 3805983 },
+              "iconSrc": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_DeathXIIIGrey.png"
+            },
+            {
+              "room": 5,
+              "half": 2,
+              "enkaId": "11214",
+              "name": "Arlaune",
+              "level": 60,
+              "position": 50,
+              "attributes": { "200": 0, "201": 0, "202": 1, "203": 0, "205": 1 },
+              "stats": { "hp": 2355530 },
+              "iconSrc": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_ArlauneGrey.png"
+            },
+            {
+              "room": 5,
+              "half": 2,
+              "enkaId": "11226",
+              "name": "Goblin",
+              "level": 60,
+              "position": 50,
+              "attributes": { "200": 0, "201": 0, "202": 1, "203": 0, "205": 1 },
+              "stats": { "hp": 3420684 },
+              "iconSrc": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_GoblinGrey.png"
+            },
+            {
+              "room": 5,
+              "half": 2,
+              "enkaId": "11462",
+              "name": "Ahriman",
+              "level": 60,
+              "position": 50,
+              "attributes": { "200": 0, "201": 0, "202": 1, "203": 0, "205": 1 },
+              "stats": { "hp": 751517 },
+              "iconSrc": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_Ahriman.png"
+            },
+            {
+              "room": 5,
+              "half": 2,
+              "enkaId": "11472",
+              "name": "Specter",
+              "level": 60,
+              "position": 50,
+              "attributes": { "200": 0, "201": 0, "202": 1, "203": 0, "205": 1 },
+              "stats": { "hp": 638906 },
+              "iconSrc": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_Specter.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "node": "62022",
+      "room": 6,
+      "halves": [
+        {
+          "room": 6,
+          "half": 1,
+          "enemies": [
+            {
+              "room": 6,
+              "half": 1,
+              "enkaId": "11312",
+              "name": "Ambusher",
+              "level": 65,
+              "position": 50,
+              "attributes": { "200": 1, "201": 1, "202": 0, "203": 0, "205": 0 },
+              "stats": { "hp": 694661 },
+              "iconSrc": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_ThugAssaulterPro.png"
+            },
+            {
+              "room": 6,
+              "half": 1,
+              "enkaId": "11332",
+              "name": "Arsonist",
+              "level": 65,
+              "position": 50,
+              "attributes": { "200": 1, "201": 1, "202": 0, "203": 0, "205": 0 },
+              "stats": { "hp": 694661 },
+              "iconSrc": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_ThugPyromaniacPro.png"
+            },
+            {
+              "room": 6,
+              "half": 1,
+              "enkaId": "11671",
+              "name": "Rampant Brute",
+              "level": 65,
+              "position": 50,
+              "attributes": { "200": 1, "201": 1, "202": -1, "203": 0, "205": 0 },
+              "stats": { "hp": 11035144 },
+              "iconSrc": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_DubiousHero.png"
+            }
+          ]
+        },
+        {
+          "room": 6,
+          "half": 2,
+          "enemies": [
+            {
+              "room": 6,
+              "half": 2,
+              "enkaId": "11711",
+              "name": "Thracian",
+              "level": 65,
+              "position": 50,
+              "attributes": { "200": 0, "201": 0, "202": 1, "203": 0, "205": 1 },
+              "stats": { "hp": 9337702 },
+              "iconSrc": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_Thracian.png"
+            },
+            {
+              "room": 6,
+              "half": 2,
+              "enkaId": "11822",
+              "name": "Alpeca (Infested)",
+              "level": 65,
+              "position": 50,
+              "attributes": { "200": 0, "201": 0, "202": 1, "203": 0, "205": 1 },
+              "stats": { "hp": 958763 },
+              "iconSrc": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_AlpecaInfested.png"
+            },
+            {
+              "room": 6,
+              "half": 2,
+              "enkaId": "11832",
+              "name": "Tyrfing (Infested)",
+              "level": 65,
+              "position": 50,
+              "attributes": { "200": 0, "201": 0, "202": 1, "203": 0, "205": 1 },
+              "stats": { "hp": 958763 },
+              "iconSrc": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_TyrfingInfested.png"
+            },
+            {
+              "room": 6,
+              "half": 2,
+              "enkaId": "11851",
+              "name": "Hitchspiker",
+              "level": 65,
+              "position": 50,
+              "attributes": { "200": 0, "201": 0, "202": 0, "203": 0, "205": 1 },
+              "stats": { "hp": 195800 },
+              "iconSrc": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_Hitchspiker.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "node": "62022",
+      "room": 7,
+      "halves": [
+        {
+          "room": 7,
+          "half": 1,
+          "enemies": [
+            {
+              "room": 7,
+              "half": 1,
+              "enkaId": "11096",
+              "name": "Tyrfing",
+              "level": 70,
+              "position": 50,
+              "attributes": { "200": 0, "201": 0, "202": 1, "203": 0, "205": 1 },
+              "stats": { "hp": 668274 },
+              "iconSrc": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_ClaymoreGrey.png"
+            },
+            {
+              "room": 7,
+              "half": 1,
+              "enkaId": "11181",
+              "name": "Notorious - Thanatos",
+              "level": 70,
+              "position": 50,
+              "attributes": { "200": 0, "201": 0, "202": 1, "203": 0, "205": 1 },
+              "stats": { "hp": 11004814 },
+              "iconSrc": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_DeathXIIIBoss.png"
+            }
+          ]
+        },
+        {
+          "room": 7,
+          "half": 2,
+          "enemies": [
+            {
+              "room": 7,
+              "half": 2,
+              "enkaId": "11682",
+              "name": "Fossor",
+              "level": 70,
+              "position": 50,
+              "attributes": { "200": 0, "201": 0, "202": 1, "203": 0, "205": 1 },
+              "stats": { "hp": 900951 },
+              "iconSrc": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_Fossor.png"
+            },
+            {
+              "room": 7,
+              "half": 2,
+              "enkaId": "11692",
+              "name": "Sordidus",
+              "level": 70,
+              "position": 50,
+              "attributes": { "200": 0, "201": 0, "202": 1, "203": 0, "205": 1 },
+              "stats": { "hp": 900951 },
+              "iconSrc": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_Sordidus.png"
+            },
+            {
+              "room": 7,
+              "half": 2,
+              "enkaId": "11961",
+              "name": "Tepes",
+              "level": 70,
+              "position": 50,
+              "attributes": { "200": 0, "201": 0, "202": 1, "203": 0, "205": 1 },
+              "stats": { "hp": 12673418 },
+              "iconSrc": "https://raw.githubusercontent.com/VelikiySebas/zzz-chars/master/images/enemies/Monster_Tepes.png"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_id": "680b6f119bb4c03551e8c84b"
+}
